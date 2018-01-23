@@ -1,0 +1,4 @@
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.RepositoryPattern.Core\bin\Debug\Lvc.RepositoryPattern.Core.dll
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.RepositoryPattern.Core\bin\Debug\Lvc.RepositoryPattern.Core.pdb
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.RepositoryPattern.Core\obj\Debug\Lvc.RepositoryPattern.Core.dll
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.RepositoryPattern.Core\obj\Debug\Lvc.RepositoryPattern.Core.pdb

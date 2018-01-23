@@ -1,0 +1,70 @@
+D:\Users\LVillarCruz\documents\visual studio 2015\Projects\Lvc\Lvc.Tests\obj\Debug\Lvc.Tests.csprojResolveAssemblyReference.cache
+D:\Users\LVillarCruz\documents\visual studio 2015\Projects\Lvc\Lvc.Tests\bin\Debug\Lvc.Tests.dll
+D:\Users\LVillarCruz\documents\visual studio 2015\Projects\Lvc\Lvc.Tests\bin\Debug\Lvc.Tests.pdb
+D:\Users\LVillarCruz\documents\visual studio 2015\Projects\Lvc\Lvc.Tests\bin\Debug\FakeItEasy.dll
+D:\Users\LVillarCruz\documents\visual studio 2015\Projects\Lvc\Lvc.Tests\bin\Debug\Lvc.dll
+D:\Users\LVillarCruz\documents\visual studio 2015\Projects\Lvc\Lvc.Tests\bin\Debug\Lvc.Core.dll
+D:\Users\LVillarCruz\documents\visual studio 2015\Projects\Lvc\Lvc.Tests\bin\Debug\Lvc.pdb
+D:\Users\LVillarCruz\documents\visual studio 2015\Projects\Lvc\Lvc.Tests\bin\Debug\FakeItEasy.pdb
+D:\Users\LVillarCruz\documents\visual studio 2015\Projects\Lvc\Lvc.Tests\bin\Debug\FakeItEasy.xml
+D:\Users\LVillarCruz\documents\visual studio 2015\Projects\Lvc\Lvc.Tests\bin\Debug\Lvc.Core.pdb
+D:\Users\LVillarCruz\documents\visual studio 2015\Projects\Lvc\Lvc.Tests\obj\Debug\Lvc.Tests.dll
+D:\Users\LVillarCruz\documents\visual studio 2015\Projects\Lvc\Lvc.Tests\obj\Debug\Lvc.Tests.pdb
+D:\Users\LVillarCruz\documents\visual studio 2015\Projects\Lvc\Lvc.Tests\bin\Debug\xunit.abstractions.dll
+D:\Users\LVillarCruz\documents\visual studio 2015\Projects\Lvc\Lvc.Tests\bin\Debug\xunit.runner.visualstudio.testadapter.dll
+D:\Users\LVillarCruz\documents\visual studio 2015\Projects\Lvc\Lvc.Tests\bin\Debug\xunit.runner.utility.desktop.dll
+D:\Users\LVillarCruz\documents\visual studio 2015\Projects\Lvc\Lvc.Tests\bin\Debug\xunit.assert.dll
+D:\Users\LVillarCruz\documents\visual studio 2015\Projects\Lvc\Lvc.Tests\bin\Debug\xunit.core.dll
+D:\Users\LVillarCruz\documents\visual studio 2015\Projects\Lvc\Lvc.Tests\bin\Debug\xunit.execution.desktop.dll
+D:\Users\LVillarCruz\documents\visual studio 2015\Projects\Lvc\Lvc.Tests\bin\Debug\xunit.assert.pdb
+D:\Users\LVillarCruz\documents\visual studio 2015\Projects\Lvc\Lvc.Tests\bin\Debug\xunit.assert.xml
+D:\Users\LVillarCruz\documents\visual studio 2015\Projects\Lvc\Lvc.Tests\bin\Debug\xunit.core.pdb
+D:\Users\LVillarCruz\documents\visual studio 2015\Projects\Lvc\Lvc.Tests\bin\Debug\xunit.core.xml
+D:\Users\LVillarCruz\documents\visual studio 2015\Projects\Lvc\Lvc.Tests\bin\Debug\xunit.execution.desktop.pdb
+D:\Users\LVillarCruz\documents\visual studio 2015\Projects\Lvc\Lvc.Tests\bin\Debug\xunit.execution.desktop.xml
+D:\Users\LVillarCruz\Desktop\MyProjects\Lvc\Lvc.Tests\bin\Debug\xunit.runner.visualstudio.testadapter.dll
+D:\Users\LVillarCruz\Desktop\MyProjects\Lvc\Lvc.Tests\bin\Debug\xunit.runner.utility.desktop.dll
+D:\Users\LVillarCruz\Desktop\MyProjects\Lvc\Lvc.Tests\bin\Debug\xunit.abstractions.dll
+D:\Users\LVillarCruz\Desktop\MyProjects\Lvc\Lvc.Tests\bin\Debug\Lvc.Tests.dll
+D:\Users\LVillarCruz\Desktop\MyProjects\Lvc\Lvc.Tests\bin\Debug\Lvc.Tests.pdb
+D:\Users\LVillarCruz\Desktop\MyProjects\Lvc\Lvc.Tests\bin\Debug\FakeItEasy.dll
+D:\Users\LVillarCruz\Desktop\MyProjects\Lvc\Lvc.Tests\bin\Debug\Lvc.Core.dll
+D:\Users\LVillarCruz\Desktop\MyProjects\Lvc\Lvc.Tests\bin\Debug\Lvc.dll
+D:\Users\LVillarCruz\Desktop\MyProjects\Lvc\Lvc.Tests\bin\Debug\xunit.assert.dll
+D:\Users\LVillarCruz\Desktop\MyProjects\Lvc\Lvc.Tests\bin\Debug\xunit.core.dll
+D:\Users\LVillarCruz\Desktop\MyProjects\Lvc\Lvc.Tests\bin\Debug\xunit.execution.desktop.dll
+D:\Users\LVillarCruz\Desktop\MyProjects\Lvc\Lvc.Tests\bin\Debug\Lvc.Core.pdb
+D:\Users\LVillarCruz\Desktop\MyProjects\Lvc\Lvc.Tests\bin\Debug\Lvc.pdb
+D:\Users\LVillarCruz\Desktop\MyProjects\Lvc\Lvc.Tests\bin\Debug\FakeItEasy.pdb
+D:\Users\LVillarCruz\Desktop\MyProjects\Lvc\Lvc.Tests\bin\Debug\FakeItEasy.xml
+D:\Users\LVillarCruz\Desktop\MyProjects\Lvc\Lvc.Tests\bin\Debug\xunit.assert.pdb
+D:\Users\LVillarCruz\Desktop\MyProjects\Lvc\Lvc.Tests\bin\Debug\xunit.assert.xml
+D:\Users\LVillarCruz\Desktop\MyProjects\Lvc\Lvc.Tests\bin\Debug\xunit.core.pdb
+D:\Users\LVillarCruz\Desktop\MyProjects\Lvc\Lvc.Tests\bin\Debug\xunit.core.xml
+D:\Users\LVillarCruz\Desktop\MyProjects\Lvc\Lvc.Tests\bin\Debug\xunit.execution.desktop.pdb
+D:\Users\LVillarCruz\Desktop\MyProjects\Lvc\Lvc.Tests\bin\Debug\xunit.execution.desktop.xml
+D:\Users\LVillarCruz\Desktop\MyProjects\Lvc\Lvc.Tests\obj\Debug\Lvc.Tests.csprojResolveAssemblyReference.cache
+D:\Users\LVillarCruz\Desktop\MyProjects\Lvc\Lvc.Tests\obj\Debug\Lvc.Tests.dll
+D:\Users\LVillarCruz\Desktop\MyProjects\Lvc\Lvc.Tests\obj\Debug\Lvc.Tests.pdb
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\bin\Debug\xunit.abstractions.dll
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\bin\Debug\xunit.runner.visualstudio.testadapter.dll
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\bin\Debug\xunit.runner.utility.net35.dll
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\bin\Debug\xunit.runner.reporters.net452.dll
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\bin\Debug\Lvc.Tests.dll
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\bin\Debug\Lvc.Tests.pdb
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\bin\Debug\FakeItEasy.dll
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\bin\Debug\Lvc.Core.dll
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\bin\Debug\Lvc.dll
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\bin\Debug\xunit.assert.dll
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\bin\Debug\xunit.core.dll
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\bin\Debug\xunit.execution.desktop.dll
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\bin\Debug\Lvc.Core.pdb
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\bin\Debug\Lvc.pdb
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\bin\Debug\FakeItEasy.pdb
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\bin\Debug\FakeItEasy.xml
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\bin\Debug\xunit.assert.xml
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\bin\Debug\xunit.core.xml
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\bin\Debug\xunit.execution.desktop.xml
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\obj\Debug\Lvc.Tests.csprojResolveAssemblyReference.cache
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\obj\Debug\Lvc.Tests.dll
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\obj\Debug\Lvc.Tests.pdb

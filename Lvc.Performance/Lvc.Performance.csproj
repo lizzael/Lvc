@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D3162315-78C4-4310-91BB-CC337889F036}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lvc.Performance</RootNamespace>
+    <AssemblyName>Lvc.Performance</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADTs\DisjointSets\DisjointSet.cs" />
+    <Compile Include="ADTs\Graphs\DirectedGraph.cs" />
+    <Compile Include="ADTs\Graphs\Edges\DirectedEdge.cs" />
+    <Compile Include="ADTs\Graphs\Edges\Edge.cs" />
+    <Compile Include="ADTs\Graphs\Edges\UndirectedEdge.cs" />
+    <Compile Include="ADTs\Graphs\Graph.cs" />
+    <Compile Include="ADTs\Graphs\UndirectedGraph.cs" />
+    <Compile Include="ADTs\Heaps\Heap.cs" />
+    <Compile Include="ADTs\Trees\NTree.cs" />
+    <Compile Include="ADTs\Trees\Tree.cs" />
+    <Compile Include="Algorithms\Graphs\Bfs.cs" />
+    <Compile Include="Algorithms\Graphs\Dfs.cs" />
+    <Compile Include="Algorithms\Graphs\Kruskal.cs" />
+    <Compile Include="Algorithms\Graphs\Lee.cs" />
+    <Compile Include="Algorithms\Graphs\Prim.cs" />
+    <Compile Include="Algorithms\HashCodes\IntsHashCodeProvider.cs" />
+    <Compile Include="Algorithms\Sorting\MergeSort.cs" />
+    <Compile Include="Algorithms\Sorting\SortingBase.cs" />
+    <Compile Include="Algorithms\Strings\Kmp.cs" />
+    <Compile Include="Algorithms\Strings\LongestCommonSubsequent.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\Position.cs" />
+    <Compile Include="Utils\PositionFactory.cs" />
+    <Compile Include="Utils\PositionMovements\Movements.cs" />
+    <Compile Include="Utils\PositionMovements\MovementsFactory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lvc.Performance.Core\Lvc.Performance.Core.csproj">
+      <Project>{1c1ee283-5707-4e83-847a-93f5d3dff24f}</Project>
+      <Name>Lvc.Performance.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lvc\Lvc.csproj">
+      <Project>{da0ec979-ae8a-4a3c-bb4e-f8a2abf37d52}</Project>
+      <Name>Lvc</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

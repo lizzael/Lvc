@@ -1,0 +1,12 @@
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.RepositoryPattern\bin\Debug\Lvc.RepositoryPattern.dll.config
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.RepositoryPattern\bin\Debug\Lvc.RepositoryPattern.dll
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.RepositoryPattern\bin\Debug\Lvc.RepositoryPattern.pdb
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.RepositoryPattern\bin\Debug\EntityFramework.dll
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.RepositoryPattern\bin\Debug\EntityFramework.SqlServer.dll
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.RepositoryPattern\bin\Debug\Lvc.RepositoryPattern.Core.dll
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.RepositoryPattern\bin\Debug\Lvc.RepositoryPattern.Core.pdb
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.RepositoryPattern\bin\Debug\EntityFramework.xml
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.RepositoryPattern\bin\Debug\EntityFramework.SqlServer.xml
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.RepositoryPattern\obj\Debug\Lvc.RepositoryPattern.csprojResolveAssemblyReference.cache
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.RepositoryPattern\obj\Debug\Lvc.RepositoryPattern.dll
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.RepositoryPattern\obj\Debug\Lvc.RepositoryPattern.pdb

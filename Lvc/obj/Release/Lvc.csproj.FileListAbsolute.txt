@@ -1,0 +1,7 @@
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc\bin\Release\Lvc.dll
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc\bin\Release\Lvc.pdb
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc\bin\Release\Lvc.Core.dll
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc\bin\Release\Lvc.Core.pdb
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc\obj\Release\Lvc.csprojResolveAssemblyReference.cache
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc\obj\Release\Lvc.dll
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc\obj\Release\Lvc.pdb

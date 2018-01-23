@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>theory</Title>
+			<Shortcut>theory</Shortcut>
+			<Description>Code snippet for theory</Description>
+			<Author>Lizzael Villar</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Imports>
+				<Import>
+					<Namespace>Xunit</Namespace>
+				</Import>
+			</Imports>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<ToolTip>Theory name</ToolTip>
+					<Default>MyTheoryName</Default>
+				</Literal>
+				<Literal>
+					<ID>paramType</ID>
+					<ToolTip>Param Type</ToolTip>
+					<Default>int</Default>
+				</Literal>
+				<Literal>
+					<ID>paramName</ID>
+					<ToolTip>Param Name</ToolTip>
+					<Default>paramName</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp">
+				<![CDATA[[Theory]
+	[InlineData(0)]
+	public void $name$($paramType$ $paramName$) 
+	{
+		// Arrange
+		$end$
+		// Act
+
+		// Assert
+
+	}]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

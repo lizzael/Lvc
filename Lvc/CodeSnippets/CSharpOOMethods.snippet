@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Override object methods</Title>
+			<Shortcut>oometh</Shortcut>
+			<Description>Code snippet for override object methods</Description>
+			<Author>Lizzael Villar</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal Editable="false">
+					<ID>EnclosingClass</ID>
+					<Function>ClassName()</Function>
+				</Literal>
+				<Literal>
+					<ID>code</ID>
+					<ToolTip>Code</ToolTip>
+					<Default>throw new System.NotImplementedException(); // Todo: Implement it.</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp">
+				<![CDATA[public override bool Equals(object obj) =>
+			Equals(obj as $EnclosingClass$);
+	
+	public bool Equals($EnclosingClass$ item)
+	{
+		if(item == null)
+			return false;
+
+		$code$$end$
+	}
+
+	public override int GetHashCode() =>
+		base.GetHashCode(); // Todo: Implement it.
+	
+	public override string ToString() =>
+		base.ToString(); // Todo: Implement it.]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

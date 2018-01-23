@@ -1,0 +1,14 @@
+D:\Users\LVillarCruz\documents\visual studio 2015\Projects\Lvc\Lvc.Core\bin\Debug\Lvc.Core.dll
+D:\Users\LVillarCruz\documents\visual studio 2015\Projects\Lvc\Lvc.Core\bin\Debug\Lvc.Core.pdb
+D:\Users\LVillarCruz\documents\visual studio 2015\Projects\Lvc\Lvc.Core\obj\Debug\Lvc.Core.dll
+D:\Users\LVillarCruz\documents\visual studio 2015\Projects\Lvc\Lvc.Core\obj\Debug\Lvc.Core.pdb
+D:\Users\LVillarCruz\Desktop\MyProjects\Lvc\Lvc.Core\bin\Debug\Lvc.Core.dll
+D:\Users\LVillarCruz\Desktop\MyProjects\Lvc\Lvc.Core\bin\Debug\Lvc.Core.pdb
+D:\Users\LVillarCruz\Desktop\MyProjects\Lvc\Lvc.Core\obj\Debug\Lvc.Core.dll
+D:\Users\LVillarCruz\Desktop\MyProjects\Lvc\Lvc.Core\obj\Debug\Lvc.Core.pdb
+D:\Users\LVillarCruz\Desktop\MyProjects\Lvc\Lvc.Core\obj\Debug\Lvc.Core.csprojResolveAssemblyReference.cache
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Core\bin\Debug\Lvc.Core.dll
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Core\bin\Debug\Lvc.Core.pdb
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Core\obj\Debug\Lvc.Core.csprojResolveAssemblyReference.cache
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Core\obj\Debug\Lvc.Core.dll
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Core\obj\Debug\Lvc.Core.pdb
