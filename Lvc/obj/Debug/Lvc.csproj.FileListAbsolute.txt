@@ -19,3 +19,4 @@ D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc\bin\Debug\Lvc.Core.pdb
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc\obj\Debug\Lvc.csprojResolveAssemblyReference.cache
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc\obj\Debug\Lvc.dll
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc\obj\Debug\Lvc.pdb
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc\obj\Debug\Lvc.csproj.CoreCompileInputs.cache

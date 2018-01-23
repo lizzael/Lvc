@@ -68,3 +68,4 @@ D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\bin\Debug\xunit.execution
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\obj\Debug\Lvc.Tests.csprojResolveAssemblyReference.cache
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\obj\Debug\Lvc.Tests.dll
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\obj\Debug\Lvc.Tests.pdb
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\obj\Debug\Lvc.Tests.csproj.CoreCompileInputs.cache

@@ -68,16 +68,6 @@
   <ItemGroup>
     <Folder Include="Services\ServiceResults\" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Lvc.RepositoryPattern.Core\Lvc.BackendPatterns.Core.csproj">
-      <Project>{4e80d3cf-cc3c-4001-88fb-a2097f89209e}</Project>
-      <Name>Lvc.BackendPatterns.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Lvc.RepositoryPattern\Lvc.BackendPatterns.csproj">
-      <Project>{00b711ff-e240-462f-8e63-e48c18f0c94c}</Project>
-      <Name>Lvc.BackendPatterns</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
