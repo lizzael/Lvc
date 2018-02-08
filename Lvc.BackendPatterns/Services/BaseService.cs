@@ -10,7 +10,7 @@ namespace Lvc.BackendPatterns.Services
     {
         private ILogginService LoggingService { get; }
 
-        public BaseService(ILogginService loggingService)=>
+        public BaseService(ILogginService loggingService) =>
             LoggingService = loggingService;
 
         public IEmptyServiceResult Try(Action action)
