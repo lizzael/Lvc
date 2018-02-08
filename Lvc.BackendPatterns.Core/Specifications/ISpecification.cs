@@ -3,12 +3,13 @@ using System.Linq.Expressions;
 
 namespace Lvc.BackendPatterns.Core.Specifications
 {
-    public interface ISpecification<T>
+    public interface ISpecification<TEntity, TKey>
+		where TEntity : Entity<TKey>
     {
-        Expression<Func<T, bool>> Expression { get; }
-        bool IsSatisfiedBy(T t);
-        ISpecification<T> And(ISpecification<T> specification);
-        ISpecification<T> Or(ISpecification<T> specification);
-        ISpecification<T> Not(ISpecification<T> specification);
+        Expression<Func<TEntity, bool>> Expression { get; }
+        bool IsSatisfiedBy(TEntity t);
+        ISpecification<TEntity, TKey> And(ISpecification<TEntity, TKey> specification);
+		ISpecification<TEntity, TKey> Or(ISpecification<TEntity, TKey> specification);
+		ISpecification<TEntity, TKey> Not(ISpecification<TEntity, TKey> specification);
     }
 }

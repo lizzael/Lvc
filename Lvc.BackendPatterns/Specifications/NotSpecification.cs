@@ -2,15 +2,17 @@
 using Lvc.RepositoryPattern.Specifications;
 using System;
 using System.Linq.Expressions;
+using Lvc.BackendPatterns.Core;
 
 namespace Lvc.BackendPatterns.Specifications
 {
-    public class NotSpecification<T> : UnarySpecification<T>
-    {
-        protected internal NotSpecification(ISpecification<T> specification)
+    public class NotSpecification<TEntity, TKey> : UnarySpecification<TEntity, TKey>
+		where TEntity : Entity<TKey>
+	{
+        protected internal NotSpecification(ISpecification<TEntity, TKey> specification)
             : base(specification) { }
 
-        public override Expression<Func<T, bool>> Expression =>
+        public override Expression<Func<TEntity, bool>> Expression =>
             t => !IsSatisfiedBy(t);
     }
 }

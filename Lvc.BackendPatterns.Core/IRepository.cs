@@ -4,13 +4,13 @@ using System.Threading.Tasks;
 
 namespace Lvc.BackendPatterns.Core
 {
-    public interface IRepository<TEntity> where TEntity : class
+    public interface IRepository<TEntity, TKey> where TEntity : Entity<TKey>
     {
         void Insert(TEntity entity);
         void Insert(IEnumerable<TEntity> entities);
-        IEnumerable<TEntity> Get(QueryDetails<TEntity> queryDetails = null);
+        IEnumerable<TEntity> Get(QueryDetails<TEntity, TKey> queryDetails = null);
         TEntity Get(params object[] keyValues);
-        Task<List<TEntity>> GetAsync(QueryDetails<TEntity> queryDetails = null);
+        Task<List<TEntity>> GetAsync(QueryDetails<TEntity, TKey> queryDetails = null);
         Task<TEntity> GetAsync(params object[] keyValues);
         void Delete(params object[] keyValues);
         void Delete(TEntity entity);
