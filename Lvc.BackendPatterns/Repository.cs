@@ -10,8 +10,8 @@ using System.Threading.Tasks;
 
 namespace Lvc.BackendPatterns
 {
-    public abstract class Repository<TEntity> : IRepository<TEntity>
-        where TEntity : class
+    public abstract class Repository<TEntity, TKey> : IRepository<TEntity, TKey>
+		where TEntity : Entity<TKey>
     {
         private DbContext DbContext { get; }
 
@@ -23,16 +23,16 @@ namespace Lvc.BackendPatterns
             DbSet = dbContext.Set<TEntity>();
         }
 
-        public IEnumerable<TEntity> Get(QueryDetails<TEntity> queryDetails = null) =>
+        public IEnumerable<TEntity> Get(QueryDetails<TEntity, TKey> queryDetails = null) =>
             GetQuery(queryDetails)
                 .ToList();
 
-        public async Task<List<TEntity>> GetAsync(QueryDetails<TEntity> queryDetails = null) =>
+        public async Task<List<TEntity>> GetAsync(QueryDetails<TEntity, TKey> queryDetails = null) =>
             await GetQuery(queryDetails)
                 .ToListAsync()
                 .ConfigureAwait(false);
 
-        protected IQueryable<TEntity> GetQuery(QueryDetails<TEntity> queryDetails)
+        protected IQueryable<TEntity> GetQuery(QueryDetails<TEntity, TKey> queryDetails)
         {
             var query = DbSet.AsQueryable();
             if (queryDetails == null)
@@ -72,7 +72,7 @@ namespace Lvc.BackendPatterns
             return query;
         }
 
-        private static IQueryable<TEntity> Filter(ISpecification<TEntity> filter, IQueryable<TEntity> query) =>
+        private static IQueryable<TEntity> Filter(ISpecification<TEntity, TKey> filter, IQueryable<TEntity> query) =>
             filter == null
                 ? query
                 : query
