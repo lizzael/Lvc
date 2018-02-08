@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Lvc.BackendPatterns.Core
 {
-	public class Entity<TId> : IEquatable<Entity<TId>>
+	public class Entity<TKey> : IEquatable<Entity<TKey>>
 	{
-		public TId Id { get; protected set; }
+		public TKey Id { get; protected set; }
 
 		protected Entity() {}
 
-		public Entity(TId id) {
-			if (object.Equals(id, default(TId)))
+		public Entity(TKey id) {
+			if (object.Equals(id, default(TKey)))
 			{
 				var paramName = nameof(id);
 				throw new ArgumentException($"{paramName} can not have the default value", paramName);
@@ -26,13 +26,13 @@ namespace Lvc.BackendPatterns.Core
 
 		public override bool Equals(object obj)
 		{
-			var entity = obj as Entity<TId>;
+			var entity = obj as Entity<TKey>;
 			return entity == null
 				? false
 				: Equals(entity);
 		}
 
-		public bool Equals(Entity<TId> entity) =>
+		public bool Equals(Entity<TKey> entity) =>
 			object.Equals(Id, entity.Id);
 	}
 }
