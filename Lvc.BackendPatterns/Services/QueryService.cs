@@ -13,9 +13,7 @@ namespace Lvc.BackendPatterns.Services
         public IValueServiceResult<TValue> GetResult<TValue>(
             Func<TValue> func
         ) =>
-            Try(() => 
-                func()
-            );
+            Try(func);
 
         public async Task<IValueServiceResult<TValue>> GetResultAsync<TValue>(
             Func<Task<TValue>> funcAsync
