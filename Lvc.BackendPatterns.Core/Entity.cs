@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lvc.BackendPatterns.Core
 {
-	public class Entity<TKey> : IEquatable<Entity<TKey>>
+	public abstract class Entity<TKey> : IEquatable<Entity<TKey>>
 	{
 		public TKey Id { get; protected set; }
 
