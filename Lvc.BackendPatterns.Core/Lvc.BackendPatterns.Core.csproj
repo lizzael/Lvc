@@ -56,6 +56,7 @@
     <Compile Include="QueriesDetails\SortingDetails.cs" />
     <Compile Include="QueriesDetails\PageDetails.cs" />
     <Compile Include="QueriesDetails\QueryDetails.cs" />
+    <Compile Include="ValueObject.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

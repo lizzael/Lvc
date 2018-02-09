@@ -13,7 +13,7 @@ namespace Lvc.BackendPatterns.Core
 		protected Entity() {}
 
 		public Entity(TKey id) {
-			if (object.Equals(id, default(TKey)))
+			if (Equals(id, default(TKey)))
 			{
 				var paramName = nameof(id);
 				throw new ArgumentException($"{paramName} can not have the default value", paramName);
@@ -33,6 +33,8 @@ namespace Lvc.BackendPatterns.Core
 		}
 
 		public bool Equals(Entity<TKey> entity) =>
-			object.Equals(Id, entity.Id);
+			entity == null
+				? false
+				: Equals(Id, entity.Id);
 	}
 }
