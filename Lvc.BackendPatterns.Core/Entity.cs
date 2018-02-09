@@ -6,6 +6,13 @@ using System.Threading.Tasks;
 
 namespace Lvc.BackendPatterns.Core
 {
+	/// <summary>
+	/// Base class for entities.
+	/// Note: This class only looks at scalar properties for comparison, not collection properties.
+	/// </summary>
+	/// <typeparam name="TKey">
+	/// Type of the Id.
+	/// </typeparam>
 	public abstract class Entity<TKey> : IEquatable<Entity<TKey>>
 	{
 		public TKey Id { get; protected set; }
