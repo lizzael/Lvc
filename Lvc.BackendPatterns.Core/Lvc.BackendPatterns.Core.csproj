@@ -42,8 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entity.cs" />
-    <Compile Include="IDomainEvent.cs" />
-    <Compile Include="IHandle.cs" />
+    <Compile Include="Events\IDomainEvent.cs" />
+    <Compile Include="Handlers\IHandle.cs" />
     <Compile Include="Services\ICommandService.cs" />
     <Compile Include="Services\IDomainService.cs" />
     <Compile Include="Services\ILogginService.cs" />
