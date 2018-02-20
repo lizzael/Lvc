@@ -13,4 +13,3 @@ D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns.Tests\bin\Debug
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns.Tests\obj\Debug\Lvc.BackendPatterns.Tests.dll
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns.Tests\obj\Debug\Lvc.BackendPatterns.Tests.pdb
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns.Tests\obj\Debug\Lvc.BackendPatterns.Tests.csproj.CoreCompileInputs.cache
-D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns.Tests\obj\Debug\Lvc.BackendPatterns.Tests.csprojResolveAssemblyReference.cache

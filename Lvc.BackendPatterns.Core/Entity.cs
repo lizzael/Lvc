@@ -43,5 +43,12 @@ namespace Lvc.BackendPatterns.Core
 			entity == null
 				? false
 				: Equals(Id, entity.Id);
+
+		public static bool operator ==(Entity<TKey> x, Entity<TKey> y) =>
+			Equals(x, y);
+
+		public static bool operator !=(Entity<TKey> x, Entity<TKey> y) =>
+			!(x == y);
+
 	}
 }
