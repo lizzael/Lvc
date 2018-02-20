@@ -40,13 +40,8 @@ namespace Lvc.BackendPatterns.Core
 			return startValue + multiplier * sumOfValues;
 		}
 
-		public override bool Equals(object obj)
-		{
-			var valueObject = obj as ValueObject<T>;
-			return valueObject == null
-				? false
-				: Equals(valueObject);
-		}
+		public override bool Equals(object obj) =>
+			Equals(obj as ValueObject<T>);
 
 		public bool Equals(ValueObject<T> other)
 		{

@@ -31,13 +31,8 @@ namespace Lvc.BackendPatterns.Core
 		public override int GetHashCode() =>
 			Id.GetHashCode();
 
-		public override bool Equals(object obj)
-		{
-			var entity = obj as Entity<TKey>;
-			return entity == null
-				? false
-				: Equals(entity);
-		}
+		public override bool Equals(object obj) =>
+			Equals(obj as Entity<TKey>);
 
 		public bool Equals(Entity<TKey> entity) =>
 			entity == null
