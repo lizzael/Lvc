@@ -41,7 +41,7 @@ namespace Lvc.BackendPatterns.Core
 		}
 
 		public override bool Equals(object obj) =>
-			Equals(obj as ValueObject<T>);
+			Equals(obj as ValueObject<T>); 
 
 		public bool Equals(ValueObject<T> other)
 		{
