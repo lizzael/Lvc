@@ -48,7 +48,6 @@ D:\Users\LVillarCruz\Desktop\MyProjects\Lvc\Lvc.Tests\obj\Debug\Lvc.Tests.dll
 D:\Users\LVillarCruz\Desktop\MyProjects\Lvc\Lvc.Tests\obj\Debug\Lvc.Tests.pdb
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\bin\Debug\xunit.abstractions.dll
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\bin\Debug\xunit.runner.visualstudio.testadapter.dll
-D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\bin\Debug\xunit.runner.utility.net35.dll
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\bin\Debug\xunit.runner.reporters.net452.dll
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\bin\Debug\Lvc.Tests.dll
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\bin\Debug\Lvc.Tests.pdb
@@ -69,3 +68,4 @@ D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\obj\Debug\Lvc.Tests.cspro
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\obj\Debug\Lvc.Tests.dll
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\obj\Debug\Lvc.Tests.pdb
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\obj\Debug\Lvc.Tests.csproj.CoreCompileInputs.cache
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\bin\Debug\xunit.runner.utility.net452.dll
