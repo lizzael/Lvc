@@ -1,6 +1,5 @@
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance.Tests\bin\Debug\xunit.abstractions.dll
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance.Tests\bin\Debug\xunit.runner.visualstudio.testadapter.dll
-D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance.Tests\bin\Debug\xunit.runner.utility.net35.dll
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance.Tests\bin\Debug\xunit.runner.reporters.net452.dll
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance.Tests\bin\Debug\Lvc.Performance.Tests.dll
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance.Tests\bin\Debug\Lvc.Performance.Tests.pdb
@@ -21,7 +20,6 @@ D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance.Tests\bin\Debug\Lvc
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance.Tests\bin\Debug\xunit.assert.xml
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance.Tests\bin\Debug\xunit.core.xml
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance.Tests\bin\Debug\xunit.execution.desktop.xml
-D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance.Tests\bin\Debug\xunit.runner.utility.net452.xml
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance.Tests\bin\Debug\FakeItEasy.pdb
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance.Tests\bin\Debug\FakeItEasy.xml
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance.Tests\bin\Debug\Lvc.Core.pdb
