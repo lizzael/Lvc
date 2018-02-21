@@ -78,8 +78,7 @@ namespace Lvc.Performance.ADTs.Heaps
 
 		public bool DeleteItem(T v)
 		{
-			int p;
-			if (!_positions.TryGetValue(v, out p))
+			if (!_positions.TryGetValue(v, out int p))
 				return false;
 
 			DeleteAt(p);
