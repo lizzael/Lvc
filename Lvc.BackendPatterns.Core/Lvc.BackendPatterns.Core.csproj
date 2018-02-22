@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AggregateRoot.cs" />
     <Compile Include="Entity.cs" />
     <Compile Include="Events\DomainEvents.cs" />
     <Compile Include="Events\IDomainEvent.cs" />
