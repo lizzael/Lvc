@@ -5,7 +5,7 @@ using Lvc.BackendPatterns.Core;
 namespace Lvc.BackendPatterns.Specifications
 {
     public class ExpressionSpecification<TEntity, TKey> : Specification<TEntity, TKey>
-		where TEntity : Entity<TKey>
+		where TEntity : AggregateRoot<TKey>
 	{
 		public Func<TEntity, bool> Func { get; }
 

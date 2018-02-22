@@ -7,7 +7,7 @@ using Lvc.BackendPatterns.Core;
 namespace Lvc.BackendPatterns.Specifications
 {
     public class AndSpecification<TEntity, TKey> : BinarySpecification<TEntity, TKey>
-		where TEntity : Entity<TKey>
+		where TEntity : AggregateRoot<TKey>
 	{
         protected internal AndSpecification(
             ISpecification<TEntity, TKey> left, ISpecification<TEntity, TKey> right)

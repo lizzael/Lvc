@@ -3,4 +3,3 @@ D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance.Core\bin\Debug\Lvc.
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance.Core\obj\Debug\Lvc.Performance.Core.dll
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance.Core\obj\Debug\Lvc.Performance.Core.pdb
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance.Core\obj\Debug\Lvc.Performance.Core.csproj.CoreCompileInputs.cache
-D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance.Core\obj\Debug\Lvc.Performance.Core.csprojResolveAssemblyReference.cache

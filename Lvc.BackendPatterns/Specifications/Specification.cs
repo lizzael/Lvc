@@ -6,7 +6,7 @@ using Lvc.BackendPatterns.Core;
 namespace Lvc.BackendPatterns.Specifications
 {
     public abstract class Specification<TEntity, TKey> : ISpecification<TEntity, TKey>
-		where TEntity : Entity<TKey>
+		where TEntity : AggregateRoot<TKey>
 	{
 		public ISpecification<TEntity, TKey> And(ISpecification<TEntity, TKey> specification) =>
             new AndSpecification<TEntity, TKey>(this, specification);

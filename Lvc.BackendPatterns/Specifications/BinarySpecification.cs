@@ -5,7 +5,7 @@ using Lvc.BackendPatterns.Specifications;
 namespace Lvc.RepositoryPattern.Specifications
 {
     public abstract class BinarySpecification<TEntity, TKey> : Specification<TEntity, TKey>
-		where TEntity : Entity<TKey>
+		where TEntity : AggregateRoot<TKey>
 	{
         public ISpecification<TEntity, TKey> LeftSpecification { get; }
         public ISpecification<TEntity, TKey> RightSpecification { get; }

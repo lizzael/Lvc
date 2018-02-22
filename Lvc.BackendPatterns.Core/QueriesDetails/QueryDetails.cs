@@ -6,7 +6,7 @@ using System.Linq.Expressions;
 namespace Lvc.BackendPatterns.Core.QueriesDetails
 {
     public class QueryDetails<TEntity, TKey>
-		where TEntity : Entity<TKey>
+		where TEntity : AggregateRoot<TKey>
     {
         public IEnumerable<Expression<Func<TEntity, object>>> Includes { get; set; }
 

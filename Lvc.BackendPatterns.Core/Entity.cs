@@ -13,13 +13,13 @@ namespace Lvc.BackendPatterns.Core
 	/// <typeparam name="TKey">
 	/// Type of the Id.
 	/// </typeparam>
-	public abstract class Entity<TKey> : IEquatable<Entity<TKey>>
+	public abstract class AggregateRoot<TKey> : IEquatable<AggregateRoot<TKey>>
 	{
 		public TKey Id { get; protected set; }
 
-		protected Entity() {}
+		protected AggregateRoot() {}
 
-		public Entity(TKey id) {
+		public AggregateRoot(TKey id) {
 			if (Equals(id, default(TKey)))
 			{
 				var paramName = nameof(id);
@@ -32,17 +32,17 @@ namespace Lvc.BackendPatterns.Core
 			Id.GetHashCode();
 
 		public override bool Equals(object obj) =>
-			Equals(obj as Entity<TKey>);
+			Equals(obj as AggregateRoot<TKey>);
 
-		public bool Equals(Entity<TKey> entity) =>
+		public bool Equals(AggregateRoot<TKey> entity) =>
 			entity == null
 				? false
 				: Equals(Id, entity.Id);
 
-		public static bool operator ==(Entity<TKey> x, Entity<TKey> y) =>
+		public static bool operator ==(AggregateRoot<TKey> x, AggregateRoot<TKey> y) =>
 			Equals(x, y);
 
-		public static bool operator !=(Entity<TKey> x, Entity<TKey> y) =>
+		public static bool operator !=(AggregateRoot<TKey> x, AggregateRoot<TKey> y) =>
 			!(x == y);
 
 	}

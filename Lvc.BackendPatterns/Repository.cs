@@ -10,29 +10,29 @@ using System.Threading.Tasks;
 
 namespace Lvc.BackendPatterns
 {
-    public abstract class Repository<TEntity, TKey> : IRepository<TEntity, TKey>
-		where TEntity : Entity<TKey>
+    public abstract class Repository<TAggregateRoot, TKey> : IRepository<TAggregateRoot, TKey>
+		where TAggregateRoot : AggregateRoot<TKey>
     {
         private DbContext DbContext { get; }
 
-        protected DbSet<TEntity> DbSet { get; }
+        protected DbSet<TAggregateRoot> DbSet { get; }
 
         public Repository(DbContext dbContext)
         {
             DbContext = dbContext;
-            DbSet = dbContext.Set<TEntity>();
+            DbSet = dbContext.Set<TAggregateRoot>();
         }
 
-        public IEnumerable<TEntity> Get(QueryDetails<TEntity, TKey> queryDetails = null) =>
+        public IEnumerable<TAggregateRoot> Get(QueryDetails<TAggregateRoot, TKey> queryDetails = null) =>
             GetQuery(queryDetails)
                 .ToList();
 
-        public async Task<List<TEntity>> GetAsync(QueryDetails<TEntity, TKey> queryDetails = null) =>
+        public async Task<List<TAggregateRoot>> GetAsync(QueryDetails<TAggregateRoot, TKey> queryDetails = null) =>
             await GetQuery(queryDetails)
                 .ToListAsync()
                 .ConfigureAwait(false);
 
-        protected IQueryable<TEntity> GetQuery(QueryDetails<TEntity, TKey> queryDetails)
+        protected IQueryable<TAggregateRoot> GetQuery(QueryDetails<TAggregateRoot, TKey> queryDetails)
         {
             var query = DbSet.AsQueryable();
             if (queryDetails == null)
@@ -48,14 +48,14 @@ namespace Lvc.BackendPatterns
 
         #region GetQueryHelpers
 
-        private static IQueryable<TEntity> DoPagination(PageDetails pageDetails, IQueryable<TEntity> query) =>
+        private static IQueryable<TAggregateRoot> DoPagination(PageDetails pageDetails, IQueryable<TAggregateRoot> query) =>
             pageDetails == null
                 ? query
                 : query
                     .Skip(pageDetails.Skip)
                     .Take(pageDetails.Size);
 
-        private static IQueryable<TEntity> Sort(SortingDetails<TEntity>[] sorting, IQueryable<TEntity> query)
+        private static IQueryable<TAggregateRoot> Sort(SortingDetails<TAggregateRoot>[] sorting, IQueryable<TAggregateRoot> query)
         {
             if (sorting == null || sorting.Length == 0)
                 return query;
@@ -72,13 +72,14 @@ namespace Lvc.BackendPatterns
             return query;
         }
 
-        private static IQueryable<TEntity> Filter(ISpecification<TEntity, TKey> filter, IQueryable<TEntity> query) =>
+        private static IQueryable<TAggregateRoot> Filter(ISpecification<TAggregateRoot, TKey> filter, IQueryable<TAggregateRoot> query) =>
             filter == null
                 ? query
                 : query
                     .Where(filter.Expression);
 
-        private IQueryable<TEntity> Includes(IEnumerable<Expression<Func<TEntity, object>>> includes, IQueryable<TEntity> query)
+        private IQueryable<TAggregateRoot> Includes(
+			IEnumerable<Expression<Func<TAggregateRoot, object>>> includes, IQueryable<TAggregateRoot> query)
         {
             if (includes == null)
                 return query;
@@ -91,24 +92,24 @@ namespace Lvc.BackendPatterns
 
         #endregion GetQueryHelpers
 
-        public TEntity Get(params object[] keyValues) =>
+        public TAggregateRoot Get(params object[] keyValues) =>
             DbSet.Find(keyValues);
 
-        public async Task<TEntity> GetAsync(params object[] keyValues) =>
+        public async Task<TAggregateRoot> GetAsync(params object[] keyValues) =>
             await DbSet
                 .FindAsync(keyValues)
                 .ConfigureAwait(false);
 
-        public void Insert(TEntity entity) =>
-            DbSet.Add(entity);
+        public void Insert(TAggregateRoot aggregateRoot) =>
+            DbSet.Add(aggregateRoot);
 
-        public void Insert(IEnumerable<TEntity> entities) =>
-            DbSet.AddRange(entities);
+        public void Insert(IEnumerable<TAggregateRoot> aggregatesRoots) =>
+            DbSet.AddRange(aggregatesRoots);
 
-        public void Update(TEntity entity)
+        public void Update(TAggregateRoot aggregateRoot)
         {
-            DbSet.Attach(entity);
-            DbContext.Entry(entity).State = EntityState.Modified;
+            DbSet.Attach(aggregateRoot);
+            DbContext.Entry(aggregateRoot).State = EntityState.Modified;
         }
 
         public void Delete(params object[] keyValues) =>
@@ -116,15 +117,15 @@ namespace Lvc.BackendPatterns
                 Get(keyValues)
             );
 
-        public void Delete(TEntity entity)
+        public void Delete(TAggregateRoot aggregateRoot)
         {
-            if (DbContext.Entry(entity).State == EntityState.Detached)
-                DbSet.Attach(entity);
+            if (DbContext.Entry(aggregateRoot).State == EntityState.Detached)
+                DbSet.Attach(aggregateRoot);
 
-            DbSet.Remove(entity);
+            DbSet.Remove(aggregateRoot);
         }
 
-        public void Delete(IEnumerable<TEntity> entities) =>
-            DbSet.RemoveRange(entities);
+        public void Delete(IEnumerable<TAggregateRoot> aggregateRoot) =>
+            DbSet.RemoveRange(aggregateRoot);
     }
 }

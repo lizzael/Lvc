@@ -4,7 +4,7 @@ using System.Linq.Expressions;
 namespace Lvc.BackendPatterns.Core.Specifications
 {
     public interface ISpecification<TEntity, TKey>
-		where TEntity : Entity<TKey>
+		where TEntity : AggregateRoot<TKey>
     {
         Expression<Func<TEntity, bool>> Expression { get; }
         bool IsSatisfiedBy(TEntity t);

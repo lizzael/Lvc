@@ -5,7 +5,7 @@ using Lvc.BackendPatterns.Specifications;
 namespace Lvc.RepositoryPattern.Specifications
 {
     public abstract class UnarySpecification<TEntity, TKey> : Specification<TEntity, TKey>
-		where TEntity : Entity<TKey>
+		where TEntity : AggregateRoot<TKey>
 	{
         public ISpecification<TEntity, TKey> Specification { get; }
 
