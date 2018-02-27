@@ -43,7 +43,7 @@
   <ItemGroup>
     <Compile Include="AggregateRoot.cs" />
     <Compile Include="Entity.cs" />
-    <Compile Include="Events\DomainEvents.cs" />
+    <Compile Include="Events\DomainEventsManager.cs" />
     <Compile Include="Events\IDomainEvent.cs" />
     <Compile Include="Handlers\IHandler.cs" />
     <Compile Include="Services\ICommandService.cs" />

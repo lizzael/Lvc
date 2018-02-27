@@ -25,10 +25,13 @@ namespace Lvc.BackendPatterns.Core
 		public virtual void ClearEvents() =>
 			DomainEvents.Clear();
 
-		//public void DistpatchEvents()
-		//{
-		//	foreach(var domainEvent in DomainEvents)
-		//		DomainEvents.
-		//}
+		/// <summary>
+		/// To be executed right after the AggregateRoot is succesfully persisted.
+		/// </summary>
+		public void RaiseEvents()
+		{
+			foreach (var domainEvent in DomainEvents)
+				DomainEventsManager.Raise(domainEvent);
+		}
 	}
 }
