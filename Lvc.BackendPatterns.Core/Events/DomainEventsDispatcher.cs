@@ -47,6 +47,5 @@ namespace Lvc.BackendPatterns.Core.Events
 				instance.Handle(domainEvent);
 			}
 		}
-
 	}
 }
