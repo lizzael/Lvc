@@ -31,7 +31,7 @@ namespace Lvc.BackendPatterns.Core
 		public void DispatchEvents()
 		{
 			foreach (var domainEvent in DomainEvents)
-				DomainEventsManager.Raise(domainEvent);
+				DomainEventsManager.Dispatch(domainEvent);
 
 			ClearEvents();
 		}

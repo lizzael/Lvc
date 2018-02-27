@@ -28,7 +28,7 @@ namespace Lvc.BackendPatterns.Core.Events
 				.ToList();
 		}
 
-		public static void Raise<TDomainEvent>(TDomainEvent domainEvent)
+		public static void Dispatch<TDomainEvent>(TDomainEvent domainEvent)
 			where TDomainEvent : IDomainEvent
 		{
 			var iHandlerType = typeof(IHandler<>);
