@@ -28,7 +28,7 @@ namespace Lvc.BackendPatterns.Core
 		/// <summary>
 		/// To be executed right after the AggregateRoot is succesfully persisted.
 		/// </summary>
-		public void RaiseEvents()
+		public void DispatchEvents()
 		{
 			foreach (var domainEvent in DomainEvents)
 				DomainEventsManager.Raise(domainEvent);
