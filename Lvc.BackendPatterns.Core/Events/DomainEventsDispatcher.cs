@@ -8,7 +8,7 @@ using Lvc.BackendPatterns.Core.Handlers;
 
 namespace Lvc.BackendPatterns.Core.Events
 {
-	public static class DomainEventsManager
+	public static class DomainEventsDispatcher
 	{
 		[ThreadStatic]
 		private static List<Type> _staticHandlers;
