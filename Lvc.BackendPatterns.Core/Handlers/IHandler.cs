@@ -7,7 +7,7 @@ using Lvc.BackendPatterns.Core.Events;
 
 namespace Lvc.BackendPatterns.Core.Handlers
 {
-	public interface IHandle<T>
+	public interface IHandler<T>
 		where T : IDomainEvent
 	{
 		void Handle(T t);
