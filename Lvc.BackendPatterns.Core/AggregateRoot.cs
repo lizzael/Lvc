@@ -7,9 +7,28 @@ using Lvc.BackendPatterns.Core.Events;
 
 namespace Lvc.BackendPatterns.Core
 {
+	/// <summary>
+	/// AggregateRoots are the one responsabiles for creating domainEvents.
+	/// </summary>
+	/// <param name="domainEvent"></param>
 	public abstract class AggregateRoot<TKey> : Entity<TKey>
 	{
 		public virtual int Version { get; set; }
-		protected List<IDomainEvent> Events { get; set; }
+		protected LinkedList<IDomainEvent> DomainEvents { get; private set; }
+
+		protected AggregateRoot() =>
+			DomainEvents = new LinkedList<IDomainEvent>();
+
+		protected virtual void AddDomainEvent(IDomainEvent domainEvent) =>
+			DomainEvents.AddLast(domainEvent);
+
+		public virtual void ClearEvents() =>
+			DomainEvents.Clear();
+
+		//public void DistpatchEvents()
+		//{
+		//	foreach(var domainEvent in DomainEvents)
+		//		DomainEvents.
+		//}
 	}
 }
