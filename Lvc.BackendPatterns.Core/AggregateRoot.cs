@@ -32,6 +32,8 @@ namespace Lvc.BackendPatterns.Core
 		{
 			foreach (var domainEvent in DomainEvents)
 				DomainEventsManager.Raise(domainEvent);
+
+			ClearEvents();
 		}
 	}
 }
