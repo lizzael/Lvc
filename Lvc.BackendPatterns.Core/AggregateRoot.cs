@@ -7,10 +7,6 @@ using Lvc.BackendPatterns.Core.Events;
 
 namespace Lvc.BackendPatterns.Core
 {
-	/// <summary>
-	/// AggregateRoots are the one responsabiles for creating domainEvents.
-	/// </summary>
-	/// <param name="domainEvent"></param>
 	public abstract class AggregateRoot<TKey> : Entity<TKey>
 	{
 		public virtual int Version { get; set; }
