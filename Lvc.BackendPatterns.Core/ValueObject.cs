@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Lvc.BackendPatterns.Core
 {
@@ -41,7 +39,7 @@ namespace Lvc.BackendPatterns.Core
 		}
 
 		public override bool Equals(object obj) =>
-			Equals(obj as ValueObject<T>); 
+			Equals(obj as ValueObject<T>);
 
 		public bool Equals(ValueObject<T> other)
 		{
@@ -49,7 +47,6 @@ namespace Lvc.BackendPatterns.Core
 				return false;
 
 			var type = GetType();
-			var otherType = other.GetType();
 			var fields = GetTypeFields(type);
 			return fields.All(a => object.Equals(a.GetValue(this), a.GetValue(other)));
 		}
