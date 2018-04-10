@@ -1,16 +1,16 @@
-﻿using Lvc.Performance.Algorithms.HashCodes;
+﻿using System;
+using Lvc.Performance.Algorithms.HashCodes;
 using Lvc.Performance.Core.ADTs.Graphs.Edges;
 using Lvc.Performance.Core.Algorithms.HashCodes;
-using System;
 
 namespace Lvc.Performance.ADTs.Graphs.Edges
 {
 	public abstract class Edge : IEdge, IEquatable<Edge>
 	{
-		public static IHashCodeProvider IntHashCodeProvider => 
+		public static IHashCodeProvider IntHashCodeProvider =>
 			new HashCodeProvider();
 
-		public int V1 { get; protected set;  }
+		public int V1 { get; protected set; }
 		public int V2 { get; protected set; }
 		public int Cost { get; set; }
 

@@ -1,11 +1,8 @@
-﻿using Lvc.Extensions;
-using Lvc.Performance.Algorithms.HashCodes;
-using System.Linq;
-using Xunit;
+﻿using Xunit;
 
 namespace Lvc.Performance.Tests.Algorithms.HashCodes
 {
-	public class IntsTests
+	public class HashCodeProviderTests
 	{
 		#region GetHashCode
 
@@ -13,7 +10,7 @@ namespace Lvc.Performance.Tests.Algorithms.HashCodes
 		public void GetHashCode_CtorWithDefaultValues_NoParam_ReturnsExpectedResult()
 		{
 			// Arrange
-			var sut = new HashCodeProvider();
+			var sut = new Performance.Algorithms.HashCodes.HashCodeProvider();
 			var expectedResult = sut.Prime1;
 
 			// Act
@@ -30,13 +27,15 @@ namespace Lvc.Performance.Tests.Algorithms.HashCodes
 		public void GetHashCode_CtorWithDefaultValues_Params_ReturnsExpectedResult(int n1, int n2, int n3, int expectedResult)
 		{
 			// Arrange
-			var sut = new HashCodeProvider();
+			var sut = new Performance.Algorithms.HashCodes.HashCodeProvider();
 
 			// Act
-			var result = sut.GetHashCode(n1, n2, n3);
+			var r1 = sut.GetHashCode(n1, n2, n3);
+			var r2 = sut.GetHashCode(new { n1, n2, n3 });
 
 			// Assert
-			Assert.Equal(expectedResult, result);
+			Assert.Equal(expectedResult, r1);
+			Assert.Equal(expectedResult, r2);
 		}
 
 		[Theory]
@@ -46,7 +45,7 @@ namespace Lvc.Performance.Tests.Algorithms.HashCodes
 		public void GetHashCode_CtorWithValues_NoParam_ReturnsExpectedResult(int p1, int p2)
 		{
 			// Arrange
-			var sut = new HashCodeProvider(p1, p2);
+			var sut = new Performance.Algorithms.HashCodes.HashCodeProvider(p1, p2);
 			var expectedResult = sut.Prime1;
 
 			// Act
@@ -63,13 +62,15 @@ namespace Lvc.Performance.Tests.Algorithms.HashCodes
 		public void GetHashCode_CtorWithValues_Params_ReturnsExpectedResult(int p1, int p2, int n1, int n2, int n3, int expectedResult)
 		{
 			// Arrange
-			var sut = new HashCodeProvider(p1, p2);
+			var sut = new Performance.Algorithms.HashCodes.HashCodeProvider(p1, p2);
 
 			// Act
-			var result = sut.GetHashCode(n1, n2, n3);
+			var r1 = sut.GetHashCode(n1, n2, n3);
+			var r2 = sut.GetHashCode(new { n1, n2, n3 });
 
 			// Assert
-			Assert.Equal(expectedResult, result);
+			Assert.Equal(expectedResult, r1);
+			Assert.Equal(expectedResult, r2);
 		}
 
 		#endregion GetHashCode

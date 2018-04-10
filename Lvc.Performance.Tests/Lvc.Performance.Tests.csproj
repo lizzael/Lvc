@@ -72,7 +72,7 @@
     <Compile Include="ADTs\Heaps\HeapTests.cs" />
     <Compile Include="ADTs\Trees\NTreeTests.cs" />
     <Compile Include="Algorithms\Graphs\LeeTests.cs" />
-    <Compile Include="Algorithms\HashCodes\IntsTests.cs" />
+    <Compile Include="Algorithms\HashCodes\HashCodeProviderTests.cs" />
     <Compile Include="Algorithms\Sorting\MergeSortTest.cs" />
     <Compile Include="Algorithms\Strings\KmpTests.cs" />
     <Compile Include="Extensions\StringExtensionsTests.cs" />

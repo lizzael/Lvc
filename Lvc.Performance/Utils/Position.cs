@@ -1,15 +1,14 @@
-﻿using Lvc;
+﻿using System;
 using Lvc.Performance.Algorithms.HashCodes;
 using Lvc.Performance.Core.Algorithms.HashCodes;
 using Lvc.Performance.Core.Utils;
-using System;
 
 namespace Lvc.Performance.Utils
 {
-    public struct Position : IPosition, IEquatable<Position>
+	public struct Position : IPosition, IEquatable<Position>
 	{
-		static readonly IHashCodeProvider IntsHashCodeProvider 
-            = new HashCodeProvider();
+		static readonly IHashCodeProvider IntsHashCodeProvider
+			= new HashCodeProvider();
 
 		public int X { get; private set; }
 
@@ -37,13 +36,13 @@ namespace Lvc.Performance.Utils
 		#endregion Equals, GetHashCode, and ToString
 
 		public bool Equals(Position other) =>
-			other != null 
+			other != null
 			&& X == other.X && Y == other.Y;
 
 		public IPosition Add(IPosition pos) =>
 			new Position(X + pos.X, Y + pos.Y);
 
-		public IPosition Sub(IPosition pos) => 
+		public IPosition Sub(IPosition pos) =>
 			new Position(X - pos.X, Y - pos.Y);
 
 		public IPosition Mult(int v) =>
