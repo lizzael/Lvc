@@ -8,3 +8,12 @@ D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns.Core\bin\Debug\
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns.Core\obj\Debug\Lvc.BackendPatterns.Core.csproj.CoreCompileInputs.cache
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns.Core\obj\Debug\Lvc.BackendPatterns.Core.dll
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns.Core\obj\Debug\Lvc.BackendPatterns.Core.pdb
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns.Core\bin\Debug\xunit.abstractions.dll
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns.Core\bin\Debug\xunit.assert.dll
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns.Core\bin\Debug\xunit.core.dll
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns.Core\bin\Debug\xunit.execution.desktop.dll
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns.Core\bin\Debug\xunit.abstractions.xml
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns.Core\bin\Debug\xunit.assert.xml
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns.Core\bin\Debug\xunit.core.xml
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns.Core\bin\Debug\xunit.execution.desktop.xml
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns.Core\obj\Debug\Lvc.BackendPatterns.Core.csproj.CopyComplete

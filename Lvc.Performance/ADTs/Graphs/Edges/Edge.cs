@@ -7,8 +7,8 @@ namespace Lvc.Performance.ADTs.Graphs.Edges
 {
 	public abstract class Edge : IEdge, IEquatable<Edge>
 	{
-		public static IIntsHashCodeProvider IntHashCodeProvider => 
-			new IntsHashCodeProvider();
+		public static IHashCodeProvider IntHashCodeProvider => 
+			new HashCodeProvider();
 
 		public int V1 { get; protected set;  }
 		public int V2 { get; protected set; }

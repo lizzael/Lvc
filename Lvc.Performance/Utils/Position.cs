@@ -8,8 +8,8 @@ namespace Lvc.Performance.Utils
 {
     public struct Position : IPosition, IEquatable<Position>
 	{
-		static readonly IIntsHashCodeProvider IntsHashCodeProvider 
-            = new IntsHashCodeProvider();
+		static readonly IHashCodeProvider IntsHashCodeProvider 
+            = new HashCodeProvider();
 
 		public int X { get; private set; }
 

@@ -31,3 +31,12 @@ D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns\obj\Debug\Lvc.B
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns\obj\Debug\Lvc.BackendPatterns.csproj.CoreCompileInputs.cache
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns\obj\Debug\Lvc.BackendPatterns.dll
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns\obj\Debug\Lvc.BackendPatterns.pdb
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns\obj\Debug\Lvc.BackendPatterns.csproj.CopyComplete
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns\bin\Debug\xunit.abstractions.dll
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns\bin\Debug\xunit.assert.dll
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns\bin\Debug\xunit.core.dll
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns\bin\Debug\xunit.execution.desktop.dll
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns\bin\Debug\xunit.abstractions.xml
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns\bin\Debug\xunit.assert.xml
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns\bin\Debug\xunit.core.xml
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns\bin\Debug\xunit.execution.desktop.xml

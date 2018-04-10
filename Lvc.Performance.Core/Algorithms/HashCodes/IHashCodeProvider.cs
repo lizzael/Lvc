@@ -1,10 +1,10 @@
 ﻿namespace Lvc.Performance.Core.Algorithms.HashCodes
 {
-	public interface IIntsHashCodeProvider
+	public interface IHashCodeProvider
 	{
 		int Prime1 { get; }
 		int Prime2 { get; }
 
-		int GetHashCode(params int[] arr);
+		int GetHashCode(params object[] arr);
 	}
 }
