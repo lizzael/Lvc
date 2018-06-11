@@ -6,7 +6,6 @@ D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance\bin\Debug\Lvc.Core.
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance\bin\Debug\Lvc.Performance.Core.pdb
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance\bin\Debug\Lvc.pdb
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance\bin\Debug\Lvc.Core.pdb
-D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance\obj\Debug\Lvc.Performance.csprojResolveAssemblyReference.cache
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance\obj\Debug\Lvc.Performance.dll
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance\obj\Debug\Lvc.Performance.pdb
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance\obj\Debug\Lvc.Performance.csproj.CoreCompileInputs.cache
@@ -19,3 +18,4 @@ D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance\bin\Debug\xunit.abs
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance\bin\Debug\xunit.assert.xml
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance\bin\Debug\xunit.core.xml
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance\bin\Debug\xunit.execution.desktop.xml
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance\obj\Debug\Lvc.Performance.csprojAssemblyReference.cache

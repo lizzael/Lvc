@@ -27,7 +27,6 @@ D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns\bin\Debug\Lvc.p
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns\bin\Debug\EntityFramework.xml
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns\bin\Debug\EntityFramework.SqlServer.xml
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns\bin\Debug\Lvc.Core.pdb
-D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns\obj\Debug\Lvc.BackendPatterns.csprojResolveAssemblyReference.cache
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns\obj\Debug\Lvc.BackendPatterns.csproj.CoreCompileInputs.cache
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns\obj\Debug\Lvc.BackendPatterns.dll
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns\obj\Debug\Lvc.BackendPatterns.pdb
@@ -40,3 +39,4 @@ D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns\bin\Debug\xunit
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns\bin\Debug\xunit.assert.xml
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns\bin\Debug\xunit.core.xml
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns\bin\Debug\xunit.execution.desktop.xml
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns\obj\Debug\Lvc.BackendPatterns.csprojAssemblyReference.cache

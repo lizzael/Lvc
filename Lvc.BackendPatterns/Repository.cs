@@ -92,7 +92,7 @@ namespace Lvc.BackendPatterns
 
 		#endregion GetQueryHelpers
 
-		public TAggregateRoot Get(params object[] keyValues) =>
+		public TAggregateRoot Get(params TKey[] keyValues) =>
 			DbSet.Find(keyValues);
 
 		public async Task<TAggregateRoot> GetAsync(params object[] keyValues) =>
@@ -112,7 +112,7 @@ namespace Lvc.BackendPatterns
 			DbContext.Entry(aggregateRoot).State = EntityState.Modified;
 		}
 
-		public void Delete(params object[] keyValues) =>
+		public void Delete(params TKey[] keyValues) =>
 			Delete(
 				Get(keyValues)
 			);

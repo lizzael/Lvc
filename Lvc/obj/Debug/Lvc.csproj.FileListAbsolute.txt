@@ -16,7 +16,6 @@ D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc\bin\Debug\Lvc.dll
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc\bin\Debug\Lvc.pdb
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc\bin\Debug\Lvc.Core.dll
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc\bin\Debug\Lvc.Core.pdb
-D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc\obj\Debug\Lvc.csprojResolveAssemblyReference.cache
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc\obj\Debug\Lvc.dll
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc\obj\Debug\Lvc.pdb
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc\obj\Debug\Lvc.csproj.CoreCompileInputs.cache
@@ -29,3 +28,4 @@ D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc\bin\Debug\xunit.abstractions.xm
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc\bin\Debug\xunit.assert.xml
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc\bin\Debug\xunit.core.xml
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc\bin\Debug\xunit.execution.desktop.xml
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc\obj\Debug\Lvc.csprojAssemblyReference.cache

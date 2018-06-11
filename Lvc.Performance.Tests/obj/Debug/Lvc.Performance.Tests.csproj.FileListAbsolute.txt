@@ -23,8 +23,8 @@ D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance.Tests\bin\Debug\xun
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance.Tests\bin\Debug\FakeItEasy.pdb
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance.Tests\bin\Debug\FakeItEasy.xml
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance.Tests\bin\Debug\Lvc.Core.pdb
-D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance.Tests\obj\Debug\Lvc.Performance.Tests.csprojResolveAssemblyReference.cache
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance.Tests\obj\Debug\Lvc.Performance.Tests.dll
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance.Tests\obj\Debug\Lvc.Performance.Tests.pdb
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance.Tests\obj\Debug\Lvc.Performance.Tests.csproj.CoreCompileInputs.cache
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance.Tests\obj\Debug\Lvc.Performance.Tests.csproj.CopyComplete
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance.Tests\obj\Debug\Lvc.Performance.Tests.csprojAssemblyReference.cache

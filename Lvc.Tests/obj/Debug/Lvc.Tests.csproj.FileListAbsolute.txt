@@ -64,9 +64,9 @@ D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\bin\Debug\FakeItEasy.xml
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\bin\Debug\xunit.assert.xml
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\bin\Debug\xunit.core.xml
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\bin\Debug\xunit.execution.desktop.xml
-D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\obj\Debug\Lvc.Tests.csprojResolveAssemblyReference.cache
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\obj\Debug\Lvc.Tests.dll
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\obj\Debug\Lvc.Tests.pdb
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\obj\Debug\Lvc.Tests.csproj.CoreCompileInputs.cache
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\bin\Debug\xunit.runner.utility.net452.dll
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\obj\Debug\Lvc.Tests.csproj.CopyComplete
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\obj\Debug\Lvc.Tests.csprojAssemblyReference.cache
