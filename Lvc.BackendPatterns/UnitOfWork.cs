@@ -1,4 +1,5 @@
-﻿using System.Data.Entity;
+﻿using System;
+using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.Threading.Tasks;
 using Lvc.BackendPatterns.Core;
@@ -33,11 +34,10 @@ namespace Lvc.BackendPatterns
 
 		public void Dispose()
 		{
-			if (DbContext != null)
-			{
-				DbContext.Dispose();
-				DbContext = null;
-			}
+			DbContext?.Dispose();
+			DbContext = null;
+
+			GC.SuppressFinalize(this);
 		}
 	}
 }

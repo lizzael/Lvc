@@ -126,6 +126,8 @@ namespace Lvc.BackendPatterns
 			DbSet = null;
 			UnitOfWork?.Dispose();
 			UnitOfWork = null;
+
+			GC.SuppressFinalize(this);
 		}
 	}
 }
