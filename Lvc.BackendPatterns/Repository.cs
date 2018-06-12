@@ -1,26 +1,25 @@
-﻿using Lvc.BackendPatterns.Core;
-using Lvc.BackendPatterns.Core.QueriesDetails;
-using Lvc.BackendPatterns.Core.Specifications;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
+using Lvc.BackendPatterns.Core;
+using Lvc.BackendPatterns.Core.QueriesDetails;
+using Lvc.BackendPatterns.Core.Specifications;
 
 namespace Lvc.BackendPatterns
 {
 	public abstract class Repository<TAggregateRoot, TKey> : IRepository<TAggregateRoot, TKey>
 		where TAggregateRoot : AggregateRoot<TKey>
 	{
-		private DbContext DbContext { get; }
+		protected IUnitOfWork UnitOfWork { get; private set; }
+		protected DbSet<TAggregateRoot> DbSet { get; private set; }
 
-		protected DbSet<TAggregateRoot> DbSet { get; }
-
-		public Repository(DbContext dbContext)
+		public Repository(IUnitOfWork unitOfWork)
 		{
-			DbContext = dbContext;
-			DbSet = dbContext.Set<TAggregateRoot>();
+			UnitOfWork = unitOfWork;
+			DbSet = unitOfWork.GetDbSet<TAggregateRoot, TKey>();
 		}
 
 		public IEnumerable<TAggregateRoot> Get(QueryDetails<TAggregateRoot, TKey> queryDetails = null) =>
@@ -38,64 +37,56 @@ namespace Lvc.BackendPatterns
 			if (queryDetails == null)
 				return query;
 
-			query = Includes(queryDetails.Includes, query);
-			query = Filter(queryDetails.Filter, query);
-			query = Sort(queryDetails.Sorting, query);
-			query = DoPagination(queryDetails.Page, query);
+			void Include(IEnumerable<Expression<Func<TAggregateRoot, object>>> includes)
+			{
+				if (includes != null)
+					query = includes.Aggregate(query, (acc, include) => acc.Include(include));
+			}
+
+			void Filter(ISpecification<TAggregateRoot, TKey> filter)
+			{
+				if (filter != null)
+					query = query
+						.Where(filter.Expression);
+			}
+
+			void Sort(SortingDetails<TAggregateRoot>[] sorting)
+			{
+				if (sorting == null || sorting.Length == 0)
+					return;
+
+				var sortedQuery = sorting[0].Descending
+					? query.OrderByDescending(sorting[0].KeySelector)
+					: query.OrderBy(sorting[0].KeySelector);
+
+				for (var i = 1; i < sorting.Length; i++)
+					sortedQuery = sorting[i].Descending
+						? sortedQuery.ThenByDescending(sorting[i].KeySelector)
+						: sortedQuery.ThenBy(sorting[i].KeySelector);
+
+				query = sortedQuery;
+			}
+
+			void Paginate(PageDetails pageDetails)
+			{
+				if (pageDetails != null)
+					query = query
+						.Skip(pageDetails.Skip)
+						.Take(pageDetails.Size);
+			}
+
+			Include(queryDetails.Includes);
+			Filter(queryDetails.Filter);
+			Sort(queryDetails.Sorting);
+			Paginate(queryDetails.Page);
 
 			return query;
 		}
-
-		#region GetQueryHelpers
-
-		private static IQueryable<TAggregateRoot> DoPagination(PageDetails pageDetails, IQueryable<TAggregateRoot> query) =>
-			pageDetails == null
-				? query
-				: query
-					.Skip(pageDetails.Skip)
-					.Take(pageDetails.Size);
-
-		private static IQueryable<TAggregateRoot> Sort(SortingDetails<TAggregateRoot>[] sorting, IQueryable<TAggregateRoot> query)
-		{
-			if (sorting == null || sorting.Length == 0)
-				return query;
-
-			var sortedQuery = sorting[0].Descending
-				? query.OrderByDescending(sorting[0].KeySelector)
-				: query.OrderBy(sorting[0].KeySelector);
-
-			for (var i = 1; i < sorting.Length; i++)
-				sortedQuery = sorting[i].Descending
-					? sortedQuery.ThenByDescending(sorting[i].KeySelector)
-					: sortedQuery.ThenBy(sorting[i].KeySelector);
-
-			return query;
-		}
-
-		private static IQueryable<TAggregateRoot> Filter(ISpecification<TAggregateRoot, TKey> filter, IQueryable<TAggregateRoot> query) =>
-			filter == null
-				? query
-				: query
-					.Where(filter.Expression);
-
-		private IQueryable<TAggregateRoot> Includes(
-			IEnumerable<Expression<Func<TAggregateRoot, object>>> includes, IQueryable<TAggregateRoot> query)
-		{
-			if (includes == null)
-				return query;
-
-			foreach (var include in includes)
-				query = query.Include(include);
-
-			return query;
-		}
-
-		#endregion GetQueryHelpers
 
 		public TAggregateRoot Get(params TKey[] keyValues) =>
 			DbSet.Find(keyValues);
 
-		public async Task<TAggregateRoot> GetAsync(params object[] keyValues) =>
+		public async Task<TAggregateRoot> GetAsync(params TKey[] keyValues) =>
 			await DbSet
 				.FindAsync(keyValues)
 				.ConfigureAwait(false);
@@ -109,7 +100,8 @@ namespace Lvc.BackendPatterns
 		public void Update(TAggregateRoot aggregateRoot)
 		{
 			DbSet.Attach(aggregateRoot);
-			DbContext.Entry(aggregateRoot).State = EntityState.Modified;
+			var entry = UnitOfWork.GetEntry<TAggregateRoot, TKey>(aggregateRoot);
+			entry.State = EntityState.Modified;
 		}
 
 		public void Delete(params TKey[] keyValues) =>
@@ -119,7 +111,8 @@ namespace Lvc.BackendPatterns
 
 		public void Delete(TAggregateRoot aggregateRoot)
 		{
-			if (DbContext.Entry(aggregateRoot).State == EntityState.Detached)
+			var entry = UnitOfWork.GetEntry<TAggregateRoot, TKey>(aggregateRoot);
+			if (entry.State == EntityState.Detached)
 				DbSet.Attach(aggregateRoot);
 
 			DbSet.Remove(aggregateRoot);
@@ -127,5 +120,12 @@ namespace Lvc.BackendPatterns
 
 		public void Delete(IEnumerable<TAggregateRoot> aggregateRoot) =>
 			DbSet.RemoveRange(aggregateRoot);
+
+		public void Dispose()
+		{
+			DbSet = null;
+			UnitOfWork?.Dispose();
+			UnitOfWork = null;
+		}
 	}
 }

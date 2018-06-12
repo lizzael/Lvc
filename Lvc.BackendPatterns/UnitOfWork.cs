@@ -1,43 +1,43 @@
-﻿using Lvc.BackendPatterns.Core;
-using System;
-using System.Data.Entity;
+﻿using System.Data.Entity;
+using System.Data.Entity.Infrastructure;
 using System.Threading.Tasks;
+using Lvc.BackendPatterns.Core;
 
 namespace Lvc.BackendPatterns
 {
-    public class UnitOfWork : IUnitOfWork
-    {
-        public bool Disposed { get; protected set; }
-        protected DbContext DbContext { get; }
+	public class UnitOfWork : IUnitOfWork
+	{
+		protected DbContext DbContext { get; private set; }
 
-        public UnitOfWork(DbContext dbContext)
-        {
-            Disposed = false;
-            DbContext = dbContext;
-        }
+		public UnitOfWork(DbContext dbContext)
+		=>
+			DbContext = dbContext;
 
-        public void Save() =>
-            DbContext.SaveChanges();
+		public DbSet<TEntity> GetDbSet<TEntity, TKey>()
+			where TEntity : Entity<TKey>
+		=>
+			DbContext.Set<TEntity>();
 
-        public async Task SaveAsync() =>
-            await DbContext
-                .SaveChangesAsync()
-                .ConfigureAwait(false);
+		public DbEntityEntry<TEntity> GetEntry<TEntity, TKey>(TEntity entity)
+			where TEntity : Entity<TKey>
+		=>
+			DbContext.Entry(entity);
 
-        protected virtual void Dispose(bool disposing)
-        {
-            if (!Disposed && disposing)
-            {
-                DbContext.Dispose();
-            }
+		public void Save() =>
+			DbContext.SaveChanges();
 
-            Disposed = true;
-        }
+		public async Task SaveAsync() =>
+			await DbContext
+				.SaveChangesAsync()
+				.ConfigureAwait(false);
 
-        public void Dispose()
-        {
-            Dispose(true);
-            GC.SuppressFinalize(this);
-        }
-    }
+		public void Dispose()
+		{
+			if (DbContext != null)
+			{
+				DbContext.Dispose();
+				DbContext = null;
+			}
+		}
+	}
 }

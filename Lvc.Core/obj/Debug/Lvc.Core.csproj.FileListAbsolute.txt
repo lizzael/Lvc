@@ -21,3 +21,4 @@ D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Core\bin\Debug\xunit.assert.xml
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Core\bin\Debug\xunit.core.xml
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Core\bin\Debug\xunit.execution.desktop.xml
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Core\obj\Debug\Lvc.Core.csproj.CopyComplete
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Core\obj\Debug\Lvc.Core.csprojAssemblyReference.cache

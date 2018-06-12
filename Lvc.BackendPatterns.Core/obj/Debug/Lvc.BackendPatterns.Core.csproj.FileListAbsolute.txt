@@ -17,3 +17,9 @@ D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns.Core\bin\Debug\
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns.Core\bin\Debug\xunit.core.xml
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns.Core\bin\Debug\xunit.execution.desktop.xml
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns.Core\obj\Debug\Lvc.BackendPatterns.Core.csproj.CopyComplete
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns.Core\obj\Debug\Lvc.BackendPatterns.Core.csprojAssemblyReference.cache
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns.Core\bin\Debug\Lvc.BackendPatterns.Core.dll.config
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns.Core\bin\Debug\EntityFramework.dll
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns.Core\bin\Debug\EntityFramework.SqlServer.dll
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns.Core\bin\Debug\EntityFramework.xml
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns.Core\bin\Debug\EntityFramework.SqlServer.xml

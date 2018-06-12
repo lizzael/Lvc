@@ -12,3 +12,4 @@ D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance.Core\bin\Debug\xuni
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance.Core\bin\Debug\xunit.core.xml
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance.Core\bin\Debug\xunit.execution.desktop.xml
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance.Core\obj\Debug\Lvc.Performance.Core.csproj.CopyComplete
+D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance.Core\obj\Debug\Lvc.Performance.Core.csprojAssemblyReference.cache
