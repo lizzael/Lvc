@@ -63,7 +63,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entity.cs" />
     <Compile Include="Events\DomainEventsDispatcher.cs" />
     <Compile Include="Events\IDomainEvent.cs" />
     <Compile Include="Handlers\IHandler.cs" />
@@ -71,7 +70,7 @@
     <Compile Include="Services\IDomainService.cs" />
     <Compile Include="Services\ILogginService.cs" />
     <Compile Include="IRepository.cs" />
-    <Compile Include="IUnitOfWork.cs" />
+    <Compile Include="ICommandSaver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\IQueryService.cs" />
     <Compile Include="Services\ServiceResults\IEmptyServiceResult.cs" />

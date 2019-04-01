@@ -1,16 +1,14 @@
-﻿using System;
-using System.Data.Entity;
-using System.Data.Entity.Infrastructure;
+﻿using System.Data.Entity;
 using System.Threading.Tasks;
 using Lvc.BackendPatterns.Core;
 
 namespace Lvc.BackendPatterns
 {
-	public class UnitOfWork : IUnitOfWork
+	public class ICommandSaver : Core.ICommandSaver
 	{
 		protected DbContext DbContext { get; private set; }
 
-		public UnitOfWork(DbContext dbContext)
+		public ICommandSaver(DbContext dbContext)
 		=>
 			DbContext = dbContext;
 

@@ -79,7 +79,7 @@
     <Compile Include="Specifications\Specification.cs" />
     <Compile Include="Specifications\ExpressionSpecification.cs" />
     <Compile Include="Specifications\UnarySpecification.cs" />
-    <Compile Include="UnitOfWork.cs" />
+    <Compile Include="ICommandSaver.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

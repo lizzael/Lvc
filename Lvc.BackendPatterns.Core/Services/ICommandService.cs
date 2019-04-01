@@ -9,6 +9,6 @@ namespace Lvc.BackendPatterns.Core.Services
         IEmptyServiceResult Transaction(
             params Action[] actions);
         Task<IEmptyServiceResult> TransactionAsync(
-            params Action[] actions);
+            params Func<Task>[] asyncActions);
     }
 }

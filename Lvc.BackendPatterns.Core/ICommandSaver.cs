@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Lvc.BackendPatterns.Core
 {
-	public interface IUnitOfWork
+	public interface ICommandSaver
 	{
 		void Save();
 		Task SaveAsync();

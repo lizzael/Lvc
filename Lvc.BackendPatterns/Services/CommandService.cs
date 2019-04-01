@@ -1,21 +1,21 @@
 ﻿using Lvc.BackendPatterns.Core.Services;
 using Lvc.BackendPatterns.Core.Services.ServiceResults;
 using System;
-using System.Data.Entity;
 using System.Threading.Tasks;
-using System.Transactions;
 
 namespace Lvc.BackendPatterns.Services
 {
     public abstract class CommandService : BaseService, ICommandService
     {
-        private DbContext DbContext { get; }
+        public ICommandSaver CommandSaver { get; }
 
         public CommandService(
             ILogginService loggingService,
-            DbContext dbContext
+            ICommandSaver commandSaver
         ) : base(loggingService) =>
-            DbContext = dbContext;
+            CommandSaver = commandSaver;
+
+
         // Todo: Disable LazyLoading...
         // dbContext.Configuration.LazyLoadingEnabled = false;
 
@@ -24,37 +24,27 @@ namespace Lvc.BackendPatterns.Services
         ) =>
             Try(() =>
             {
-                using (var transactionScope = new TransactionScope())
+                foreach (var action in actions)
                 {
-                    foreach (var action in actions)
-                    {
-                        action();
-
-                        DbContext.SaveChanges();
-                    }
-
-                    transactionScope.Complete();
+                    action();
                 }
+
+                CommandSaver.Save();
             });
 
         public async Task<IEmptyServiceResult> TransactionAsync(
-            params Action[] actions
+            params Func<Task>[] asyncActions
         ) =>
             await TryAsync(async () => 
             {
-                using (var transactionScope = new TransactionScope())
+                foreach (var asyncAction in asyncActions)
                 {
-                    foreach (var action in actions)
-                    {
-                        action();
-
-                        await DbContext
-                            .SaveChangesAsync()
-                            .ConfigureAwait(false);
-                    }
-
-                    transactionScope.Complete();
+                    await asyncAction();
                 }
+
+                await CommandSaver
+                    .SaveAsync()
+                    .ConfigureAwait(false);
             }).ConfigureAwait(false);
     }
 }
