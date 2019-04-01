@@ -6,11 +6,12 @@ using Lvc.BackendPatterns.Core;
 
 namespace Lvc.BackendPatterns.Specifications
 {
-    public class AndSpecification<TEntity, TKey> : BinarySpecification<TEntity, TKey>
-		where TEntity : AggregateRoot<TKey>
+    public class AndSpecification<TEntity> : BinarySpecification<TEntity>
+		where TEntity : class
 	{
         protected internal AndSpecification(
-            ISpecification<TEntity, TKey> left, ISpecification<TEntity, TKey> right)
+            ISpecification<TEntity> left, 
+            ISpecification<TEntity> right)
             : base(left, right) { }
 
         public override Expression<Func<TEntity, bool>> Expression =>

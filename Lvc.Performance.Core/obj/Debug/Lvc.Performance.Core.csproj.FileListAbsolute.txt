@@ -13,3 +13,17 @@ D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance.Core\bin\Debug\xuni
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance.Core\bin\Debug\xunit.execution.desktop.xml
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance.Core\obj\Debug\Lvc.Performance.Core.csproj.CopyComplete
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance.Core\obj\Debug\Lvc.Performance.Core.csprojAssemblyReference.cache
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Performance.Core\bin\Debug\Lvc.Performance.Core.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Performance.Core\bin\Debug\Lvc.Performance.Core.pdb
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Performance.Core\bin\Debug\xunit.abstractions.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Performance.Core\bin\Debug\xunit.assert.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Performance.Core\bin\Debug\xunit.core.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Performance.Core\bin\Debug\xunit.execution.desktop.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Performance.Core\bin\Debug\xunit.abstractions.xml
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Performance.Core\bin\Debug\xunit.assert.xml
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Performance.Core\bin\Debug\xunit.core.xml
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Performance.Core\bin\Debug\xunit.execution.desktop.xml
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Performance.Core\obj\Debug\Lvc.Performance.Core.csproj.CoreCompileInputs.cache
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Performance.Core\obj\Debug\Lvc.Performance.Core.csproj.CopyComplete
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Performance.Core\obj\Debug\Lvc.Performance.Core.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Performance.Core\obj\Debug\Lvc.Performance.Core.pdb

@@ -11,10 +11,8 @@ namespace Lvc.IO
 	{
 		public TextReader In { get; protected set; }
 
-		public Scanner()
-		{
+		public Scanner() =>
 			In = Console.In;
-		}
 
 		public Scanner(TextReader textReader)
 		{

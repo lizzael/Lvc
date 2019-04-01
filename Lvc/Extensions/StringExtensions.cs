@@ -14,7 +14,9 @@ namespace Lvc.Extensions
 			return (T)Convert.ChangeType(s, typeof(T), CultureInfo.InvariantCulture);
 		}
 
-		public static IEnumerable<T> ConvertToMany<T>(this string str, params char[] separators)
+		public static IEnumerable<T> ConvertToMany<T>(
+            this string str, 
+            params char[] separators)
 		{
 			Validate.NotNullReference(str);
 
@@ -22,7 +24,9 @@ namespace Lvc.Extensions
 				.Select(s => s.ConvertTo<T>());
 		}
 
-		public static IEnumerable<T> ConvertToMany<T>(this string str, params string[] separators)
+		public static IEnumerable<T> ConvertToMany<T>(
+            this string str, 
+            params string[] separators)
 		{
 			Validate.NotNullReference(str);
 

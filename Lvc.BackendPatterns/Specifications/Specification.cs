@@ -5,17 +5,17 @@ using Lvc.BackendPatterns.Core;
 
 namespace Lvc.BackendPatterns.Specifications
 {
-    public abstract class Specification<TEntity, TKey> : ISpecification<TEntity, TKey>
-		where TEntity : AggregateRoot<TKey>
+    public abstract class Specification<TEntity> : ISpecification<TEntity>
+		where TEntity : class
 	{
-		public ISpecification<TEntity, TKey> And(ISpecification<TEntity, TKey> specification) =>
-            new AndSpecification<TEntity, TKey>(this, specification);
+		public ISpecification<TEntity> And(ISpecification<TEntity> specification) =>
+            new AndSpecification<TEntity>(this, specification);
 
-        public ISpecification<TEntity, TKey> Or(ISpecification<TEntity, TKey> specification) =>
-            new OrSpecification<TEntity, TKey>(this, specification);
+        public ISpecification<TEntity> Or(ISpecification<TEntity> specification) =>
+            new OrSpecification<TEntity>(this, specification);
 
-        public ISpecification<TEntity, TKey> Not(ISpecification<TEntity, TKey> specification) =>
-            new NotSpecification<TEntity, TKey>(this);
+        public ISpecification<TEntity> Not(ISpecification<TEntity> specification) =>
+            new NotSpecification<TEntity>(this);
 
         public bool IsSatisfiedBy(TEntity entity) =>
             Expression

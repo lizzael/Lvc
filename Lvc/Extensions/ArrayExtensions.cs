@@ -4,7 +4,9 @@ namespace Lvc.Extensions
 {
 	public static class ArrayExtensions
 	{
-		public static int FindIndex<T>(this T[] array, T t)
+		public static int FindIndex<T>(
+            this T[] array, 
+            T t)
 		{
 			Validate.NotNullReference(array);
 

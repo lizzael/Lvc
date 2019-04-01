@@ -15,3 +15,17 @@ D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns.Tests\obj\Debug
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns.Tests\bin\Debug\xunit.runner.utility.net452.dll
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns.Tests\obj\Debug\Lvc.BackendPatterns.Tests.csproj.CopyComplete
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns.Tests\obj\Debug\Lvc.BackendPatterns.Tests.csprojAssemblyReference.cache
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.BackendPatterns.Tests\bin\Debug\Lvc.BackendPatterns.Tests.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.BackendPatterns.Tests\bin\Debug\Lvc.BackendPatterns.Tests.pdb
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.BackendPatterns.Tests\bin\Debug\xunit.abstractions.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.BackendPatterns.Tests\bin\Debug\xunit.assert.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.BackendPatterns.Tests\bin\Debug\xunit.core.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.BackendPatterns.Tests\bin\Debug\xunit.execution.desktop.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.BackendPatterns.Tests\bin\Debug\xunit.abstractions.xml
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.BackendPatterns.Tests\bin\Debug\xunit.assert.xml
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.BackendPatterns.Tests\bin\Debug\xunit.core.xml
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.BackendPatterns.Tests\bin\Debug\xunit.execution.desktop.xml
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.BackendPatterns.Tests\obj\Debug\Lvc.BackendPatterns.Tests.csproj.CoreCompileInputs.cache
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.BackendPatterns.Tests\obj\Debug\Lvc.BackendPatterns.Tests.csproj.CopyComplete
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.BackendPatterns.Tests\obj\Debug\Lvc.BackendPatterns.Tests.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.BackendPatterns.Tests\obj\Debug\Lvc.BackendPatterns.Tests.pdb

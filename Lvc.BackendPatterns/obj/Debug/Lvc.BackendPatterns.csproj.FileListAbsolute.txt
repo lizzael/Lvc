@@ -41,3 +41,30 @@ D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns\bin\Debug\xunit
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns\bin\Debug\xunit.execution.desktop.xml
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns\obj\Debug\Lvc.BackendPatterns.csprojAssemblyReference.cache
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.BackendPatterns\bin\Debug\Lvc.BackendPatterns.Core.dll.config
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.BackendPatterns\bin\Debug\Lvc.BackendPatterns.dll.config
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.BackendPatterns\bin\Debug\Lvc.BackendPatterns.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.BackendPatterns\bin\Debug\Lvc.BackendPatterns.pdb
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.BackendPatterns\bin\Debug\EntityFramework.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.BackendPatterns\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.BackendPatterns\bin\Debug\Lvc.BackendPatterns.Core.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.BackendPatterns\bin\Debug\xunit.abstractions.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.BackendPatterns\bin\Debug\xunit.assert.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.BackendPatterns\bin\Debug\xunit.core.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.BackendPatterns\bin\Debug\xunit.execution.desktop.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.BackendPatterns\bin\Debug\Lvc.BackendPatterns.Core.pdb
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.BackendPatterns\bin\Debug\Lvc.BackendPatterns.Core.dll.config
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.BackendPatterns\bin\Debug\EntityFramework.xml
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.BackendPatterns\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.BackendPatterns\bin\Debug\xunit.abstractions.xml
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.BackendPatterns\bin\Debug\xunit.assert.xml
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.BackendPatterns\bin\Debug\xunit.core.xml
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.BackendPatterns\bin\Debug\xunit.execution.desktop.xml
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.BackendPatterns\obj\Debug\Lvc.BackendPatterns.csprojAssemblyReference.cache
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.BackendPatterns\obj\Debug\Lvc.BackendPatterns.csproj.CoreCompileInputs.cache
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.BackendPatterns\obj\Debug\Lvc.BackendPatterns.csproj.CopyComplete
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.BackendPatterns\obj\Debug\Lvc.BackendPatterns.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.BackendPatterns\obj\Debug\Lvc.BackendPatterns.pdb
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.BackendPatterns\bin\Debug\Lvc.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.BackendPatterns\bin\Debug\Lvc.Core.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.BackendPatterns\bin\Debug\Lvc.pdb
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.BackendPatterns\bin\Debug\Lvc.Core.pdb

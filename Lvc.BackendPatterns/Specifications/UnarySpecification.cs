@@ -4,12 +4,12 @@ using Lvc.BackendPatterns.Specifications;
 
 namespace Lvc.RepositoryPattern.Specifications
 {
-    public abstract class UnarySpecification<TEntity, TKey> : Specification<TEntity, TKey>
-		where TEntity : AggregateRoot<TKey>
+    public abstract class UnarySpecification<TEntity> : Specification<TEntity>
+		where TEntity : class
 	{
-        public ISpecification<TEntity, TKey> Specification { get; }
+        public ISpecification<TEntity> Specification { get; }
 
-        protected internal UnarySpecification(ISpecification<TEntity, TKey> specification) =>
+        protected internal UnarySpecification(ISpecification<TEntity> specification) =>
             Specification = specification;
     }
 }

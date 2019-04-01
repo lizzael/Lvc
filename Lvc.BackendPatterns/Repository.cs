@@ -10,47 +10,43 @@ using Lvc.BackendPatterns.Core.Specifications;
 
 namespace Lvc.BackendPatterns
 {
-	public abstract class Repository<TAggregateRoot, TKey> : IRepository<TAggregateRoot, TKey>
-		where TAggregateRoot : AggregateRoot<TKey>
+	public abstract class Repository<TEntity> : IRepository<TEntity>
+        where TEntity : class
 	{
-		protected IUnitOfWork UnitOfWork { get; private set; }
-		protected DbSet<TAggregateRoot> DbSet { get; private set; }
+		protected DbContext DbContext { get; private set; }
+        protected DbSet<TEntity> DbSet => DbContext.Set<TEntity>();
 
-		public Repository(IUnitOfWork unitOfWork)
-		{
-			UnitOfWork = unitOfWork;
-			DbSet = unitOfWork.GetDbSet<TAggregateRoot, TKey>();
-		}
+        public Repository(DbContext dbContext) =>
+            DbContext = dbContext;
 
-		public IEnumerable<TAggregateRoot> Get(QueryDetails<TAggregateRoot, TKey> queryDetails = null) =>
-			GetQuery(queryDetails)
-				.ToList();
+        public List<TEntity> Get(QueryDetails<TEntity> queryDetails = null) =>
+            GetQuery(queryDetails)
+                .ToList();
 
-		public async Task<List<TAggregateRoot>> GetAsync(QueryDetails<TAggregateRoot, TKey> queryDetails = null) =>
+        public async Task<List<TEntity>> GetAsync(QueryDetails<TEntity> queryDetails = null) =>
 			await GetQuery(queryDetails)
-				.ToListAsync()
-				.ConfigureAwait(false);
+                .ToListAsync();
 
-		protected IQueryable<TAggregateRoot> GetQuery(QueryDetails<TAggregateRoot, TKey> queryDetails)
+		protected internal IQueryable<TEntity> GetQuery(QueryDetails<TEntity> queryDetails)
 		{
 			var query = DbSet.AsQueryable();
 			if (queryDetails == null)
 				return query;
 
-			void Include(IEnumerable<Expression<Func<TAggregateRoot, object>>> includes)
+			void Include(IEnumerable<Expression<Func<TEntity, object>>> includes)
 			{
 				if (includes != null)
 					query = includes.Aggregate(query, (acc, include) => acc.Include(include));
 			}
 
-			void Filter(ISpecification<TAggregateRoot, TKey> filter)
+			void Filter(ISpecification<TEntity> filter)
 			{
 				if (filter != null)
 					query = query
 						.Where(filter.Expression);
 			}
 
-			void Sort(SortingDetails<TAggregateRoot>[] sorting)
+			void Sort(SortingDetails<TEntity>[] sorting)
 			{
 				if (sorting == null || sorting.Length == 0)
 					return;
@@ -83,51 +79,41 @@ namespace Lvc.BackendPatterns
 			return query;
 		}
 
-		public TAggregateRoot Get(params TKey[] keyValues) =>
+		public TEntity Get(params object[] keyValues) =>
 			DbSet.Find(keyValues);
 
-		public async Task<TAggregateRoot> GetAsync(params TKey[] keyValues) =>
-			await DbSet
-				.FindAsync(keyValues)
-				.ConfigureAwait(false);
+        public async Task<TEntity> GetAsync(params object[] keyValues) =>
+            await DbSet.FindAsync(keyValues)
+                .ConfigureAwait(false);
 
-		public void Insert(TAggregateRoot aggregateRoot) =>
-			DbSet.Add(aggregateRoot);
+		public void Insert(TEntity entity) =>
+			DbSet.Add(entity);
 
-		public void Insert(IEnumerable<TAggregateRoot> aggregatesRoots) =>
-			DbSet.AddRange(aggregatesRoots);
+		public void Insert(IEnumerable<TEntity> entities) =>
+			DbSet.AddRange(entities);
 
-		public void Update(TAggregateRoot aggregateRoot)
+		public void Update(TEntity entity)
 		{
-			DbSet.Attach(aggregateRoot);
-			var entry = UnitOfWork.GetEntry<TAggregateRoot, TKey>(aggregateRoot);
+			DbSet.Attach(entity);
+			var entry = DbContext.Entry(entity);
 			entry.State = EntityState.Modified;
 		}
 
-		public void Delete(params TKey[] keyValues) =>
+		public void Delete(params object[] keys) =>
 			Delete(
-				Get(keyValues)
+				Get(keys)
 			);
 
-		public void Delete(TAggregateRoot aggregateRoot)
+		public void Delete(TEntity entity)
 		{
-			var entry = UnitOfWork.GetEntry<TAggregateRoot, TKey>(aggregateRoot);
+			var entry = DbContext.Entry(entity);
 			if (entry.State == EntityState.Detached)
-				DbSet.Attach(aggregateRoot);
+				DbSet.Attach(entity);
 
-			DbSet.Remove(aggregateRoot);
+			DbSet.Remove(entity);
 		}
 
-		public void Delete(IEnumerable<TAggregateRoot> aggregateRoot) =>
-			DbSet.RemoveRange(aggregateRoot);
-
-		public void Dispose()
-		{
-			DbSet = null;
-			UnitOfWork?.Dispose();
-			UnitOfWork = null;
-
-			GC.SuppressFinalize(this);
-		}
+		public void Delete(IEnumerable<TEntity> entities) =>
+			DbSet.RemoveRange(entities);
 	}
 }

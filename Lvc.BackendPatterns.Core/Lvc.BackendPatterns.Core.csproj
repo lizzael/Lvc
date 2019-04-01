@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Lvc.BackendPatterns.Core</RootNamespace>
     <AssemblyName>Lvc.BackendPatterns.Core</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
     <NuGetPackageImportStamp>
@@ -63,7 +63,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AggregateRoot.cs" />
     <Compile Include="Entity.cs" />
     <Compile Include="Events\DomainEventsDispatcher.cs" />
     <Compile Include="Events\IDomainEvent.cs" />

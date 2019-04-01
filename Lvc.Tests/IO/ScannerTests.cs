@@ -57,7 +57,9 @@ namespace Lvc.Tests.IO
 		[InlineData(1, 1)]
 		[InlineData(int.MinValue, int.MinValue)]
 		[InlineData(int.MaxValue, int.MaxValue)]
-		public void ReadLine_Int(int intValue, int expectedResult)
+		public void ReadLine_Int(
+            int intValue, 
+            int expectedResult)
 		{
 			// Arrange
 			var textReader = A.Fake<TextReader>();
@@ -84,7 +86,9 @@ namespace Lvc.Tests.IO
 		[InlineData(int.MaxValue, int.MaxValue)]
 		[InlineData(long.MinValue, long.MinValue)]
 		[InlineData(long.MaxValue, long.MaxValue)]
-		public void ReadLine_Long(long longValue, long expectedResult)
+		public void ReadLine_Long(
+            long longValue, 
+            long expectedResult)
 		{
 			// Arrange
 			var textReader = A.Fake<TextReader>();
@@ -108,7 +112,9 @@ namespace Lvc.Tests.IO
 		[InlineData("a", "a")]
 		[InlineData("123", "123")]
 		[InlineData("asdfasd", "asdfasd")]
-		public void ReadLine_String(string str, string expectedResult)
+		public void ReadLine_String(
+            string str, 
+            string expectedResult)
 		{
 			// Arrange
 			var textReader = A.Fake<TextReader>();
@@ -128,13 +134,15 @@ namespace Lvc.Tests.IO
 		}
 
 		[Theory]
-		[InlineData("01-15-1980", "1/15/1980 00:00:00")]
-		[InlineData("10-15-1980", "10/15/1980 00:00:00")]
-		[InlineData("01/15/1980", "1/15/1980 00:00:00")]
-		[InlineData("02-13-2016 10:30:30", "2/13/2016 10:30:30")]
-		[InlineData("02-13-2016 10:30:30 pm", "2/13/2016 22:30:30")]
-		[InlineData("02-13-2016 20:30:30", "2/13/2016 20:30:30")]
-		public void ReadLine_DateTime(string str, string expectedFormattedResult)
+		[InlineData("01-15-1980", "1/15/1980 12:00:00 AM")]
+		[InlineData("10-15-1980", "10/15/1980 12:00:00 AM")]
+		[InlineData("01/15/1980", "1/15/1980 12:00:00 AM")]
+		[InlineData("02-13-2016 10:30:30", "2/13/2016 10:30:30 AM")]
+		[InlineData("02-13-2016 10:30:30 pm", "2/13/2016 10:30:30 PM")]
+		[InlineData("02-13-2016 20:30:30", "2/13/2016 8:30:30 PM")]
+		public void ReadLine_DateTime(
+            string str, 
+            string expectedFormattedResult)
 		{
 			// Arrange
 			var textReader = A.Fake<TextReader>();
@@ -161,7 +169,9 @@ namespace Lvc.Tests.IO
 		[InlineData("0", "0")]
 		[InlineData("-1 5", "-1 5")]
 		[InlineData("1 3 -4", "1 3 -4")]
-		public void ReadLineData_Int(string str, string expectedFormattedResult)
+		public void ReadLineData_Int(
+            string str, 
+            string expectedFormattedResult)
 		{
 			// Arrange
 			var textReader = A.Fake<TextReader>();
@@ -184,7 +194,9 @@ namespace Lvc.Tests.IO
 		[InlineData("0", "0")]
 		[InlineData("-1 5", "-1 5")]
 		[InlineData("1 3 -4", "1 3 -4")]
-		public void ReadLineData_Long(string str, string expectedFormattedResult)
+		public void ReadLineData_Long(
+            string str, 
+            string expectedFormattedResult)
 		{
 			// Arrange
 			var textReader = A.Fake<TextReader>();
@@ -208,7 +220,9 @@ namespace Lvc.Tests.IO
 		[InlineData("a", "a")]
 		[InlineData("1 2 3", "1 2 3")]
 		[InlineData("as dfa sd", "as dfa sd")]
-		public void ReadLineData_String(string str, string expectedFormattedResult)
+		public void ReadLineData_String(
+            string str, 
+            string expectedFormattedResult)
 		{
 			// Arrange
 			var textReader = A.Fake<TextReader>();

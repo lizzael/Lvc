@@ -5,12 +5,8 @@ using System.Threading.Tasks;
 
 namespace Lvc.BackendPatterns.Core
 {
-	public interface IUnitOfWork : IDisposable
+	public interface IUnitOfWork
 	{
-		DbSet<TEntity> GetDbSet<TEntity, TKey>()
-			where TEntity : Entity<TKey>;
-		DbEntityEntry<TEntity> GetEntry<TEntity, TKey>(TEntity entity)
-			where TEntity : Entity<TKey>;
 		void Save();
 		Task SaveAsync();
 	}

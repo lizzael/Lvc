@@ -5,12 +5,11 @@ using System.Linq.Expressions;
 
 namespace Lvc.BackendPatterns.Core.QueriesDetails
 {
-    public class QueryDetails<TEntity, TKey>
-		where TEntity : AggregateRoot<TKey>
+    public class QueryDetails<TEntity>
     {
         public IEnumerable<Expression<Func<TEntity, object>>> Includes { get; set; }
 
-        public ISpecification<TEntity, TKey> Filter { get; set; }
+        public ISpecification<TEntity> Filter { get; set; }
 
         public SortingDetails<TEntity>[] Sorting { get; set; }
 

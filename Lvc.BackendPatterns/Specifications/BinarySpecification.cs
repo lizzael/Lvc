@@ -4,14 +4,15 @@ using Lvc.BackendPatterns.Specifications;
 
 namespace Lvc.RepositoryPattern.Specifications
 {
-    public abstract class BinarySpecification<TEntity, TKey> : Specification<TEntity, TKey>
-		where TEntity : AggregateRoot<TKey>
+    public abstract class BinarySpecification<TEntity> : Specification<TEntity>
+		where TEntity : class
 	{
-        public ISpecification<TEntity, TKey> LeftSpecification { get; }
-        public ISpecification<TEntity, TKey> RightSpecification { get; }
+        public ISpecification<TEntity> LeftSpecification { get; }
+        public ISpecification<TEntity> RightSpecification { get; }
 
         protected internal BinarySpecification(
-            ISpecification<TEntity, TKey> left, ISpecification<TEntity, TKey> right)
+            ISpecification<TEntity> left, 
+            ISpecification<TEntity> right)
         {
             LeftSpecification = left;
             RightSpecification = right;

@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Lvc</RootNamespace>
     <AssemblyName>Lvc</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
     <NuGetPackageImportStamp>
@@ -68,12 +68,6 @@
     <Compile Include="Validate.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Lvc.Core\Lvc.Core.csproj">
-      <Project>{ca65ac5f-4e94-4af8-934e-848c20491579}</Project>
-      <Name>Lvc.Core</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="CodeSnippets\CSharpOOMethods.snippet" />
     <None Include="CodeSnippets\pp-vregion.snippet" />
     <None Include="packages.config" />
@@ -86,6 +80,12 @@
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\xunit.analyzers.0.8.0\analyzers\dotnet\cs\xunit.analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lvc.Core\Lvc.Core.csproj">
+      <Project>{CA65AC5F-4E94-4AF8-934E-848C20491579}</Project>
+      <Name>Lvc.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

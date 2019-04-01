@@ -6,11 +6,11 @@ namespace Lvc.Utils
 {
 	public class RandomStringGenerator : IRandomStringGenerator
 	{
-		protected Random _randomGenerator;
+		protected Random RandomGenerator { get; }
 
 		public RandomStringGenerator(int? seed = null)
 		{
-			_randomGenerator = seed.HasValue
+			RandomGenerator = seed.HasValue
 				? new Random(seed.Value)
 				: new Random();
 		}
@@ -21,7 +21,7 @@ namespace Lvc.Utils
 
 			return new string(
 				Enumerable.Range(0, length)
-					.Select(s => (char)_randomGenerator.Next(byte.MaxValue + 1))
+					.Select(s => (char)RandomGenerator.Next(byte.MaxValue + 1))
 					.ToArray()
 			);
 		}

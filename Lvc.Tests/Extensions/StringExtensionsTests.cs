@@ -15,7 +15,9 @@ namespace Lvc.Tests.Extensions
 		[InlineData("10", 10)]
 		[InlineData("-2147483648", -2147483648)] // int.MinValue
 		[InlineData("2147483647", 2147483647)] // int.MaxValue
-		public void ConvertTo_Int(string s, int expectedResult)
+		public void ConvertTo_Int(
+            string s, 
+            int expectedResult)
 		{
 			// Arrange
 
@@ -64,7 +66,9 @@ namespace Lvc.Tests.Extensions
 		[InlineData("2147483647", 2147483647)] // int.MaxValue
 		[InlineData("-9223372036854775808", -9223372036854775808L)] // long.MinValue
 		[InlineData("9223372036854775807", 9223372036854775807L)] // long.MaxValue
-		public void ConvertTo_Long(string s, long expectedResult)
+		public void ConvertTo_Long(
+            string s, 
+            long expectedResult)
 		{
 			// Arrange
 
@@ -152,7 +156,9 @@ namespace Lvc.Tests.Extensions
 		[InlineData("0", ' ', "0")]
 		[InlineData("-2147483648 -1 0 1 2147483647", ' ', "-2147483648 -1 0 1 2147483647")]
 		public void ConvertToMany_CharSeparators_Int(
-			string s, char separator, string expectedFormattedResult)
+			string s, 
+            char separator, 
+            string expectedFormattedResult)
 		{
 			// Arrange
 
@@ -192,7 +198,9 @@ namespace Lvc.Tests.Extensions
 					' ',
 					"-9223372036854775808 -1 0 1 9223372036854775807")]
 		public void ConvertToMany_CharSeparators_Long(
-			string s, char separator, string expectedFormattedResult)
+			string s, 
+            char separator, 
+            string expectedFormattedResult)
 		{
 			// Arrange
 
@@ -231,7 +239,9 @@ namespace Lvc.Tests.Extensions
 		[InlineData("01/23/2017 10:40:30 pm", ',')]
 		[InlineData("01/22/2017 20:40:30", ',')]
 		[InlineData("01-15-1980,01/23/2017 10:40:30 pm", ',')]
-		public void ConvertToMany_CharSeparators_DateTime(string str, char separator)
+		public void ConvertToMany_CharSeparators_DateTime(
+            string str, 
+            char separator)
 		{
 			// Arrange
 
@@ -276,7 +286,9 @@ namespace Lvc.Tests.Extensions
 		[InlineData("-2147483648 -1 0 1 2147483647", " ", "-2147483648 -1 0 1 2147483647")]
 		[InlineData("-2147483648, -1, 0, 1, 2147483647", ", ", "-2147483648 -1 0 1 2147483647")]
 		public void ConvertToMany_StringSeparators_Int(
-			string s, string separator, string expectedFormattedResult)
+			string s, 
+            string separator, 
+            string expectedFormattedResult)
 		{
 			// Arrange
 
@@ -324,7 +336,9 @@ namespace Lvc.Tests.Extensions
 					", ",
 					"-9223372036854775808 -1 0 1 9223372036854775807")]
 		public void ConvertToMany_StringSeparators_Long(
-			string s, string separator, string expectedFormattedResult)
+			string s, 
+            string separator, 
+            string expectedFormattedResult)
 		{
 			// Arrange
 
@@ -370,7 +384,9 @@ namespace Lvc.Tests.Extensions
 		[InlineData("01/22/2017 20:40:30", ", ")]
 		[InlineData("01-15-1980,01/23/2017 10:40:30 pm", ",")]
 		[InlineData("01-15-1980, 01/23/2017 10:40:30 pm", ", ")]
-		public void ConvertToMany_StringSeparators_DateTime(string str, string separator)
+		public void ConvertToMany_StringSeparators_DateTime(
+            string str, 
+            string separator)
 		{
 			// Arrange
 

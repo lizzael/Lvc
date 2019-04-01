@@ -21,7 +21,10 @@ namespace Lvc.Tests.Extensions
 		[InlineData("0 1 2 3 4", -2, -1)]
 		[InlineData("0 1 2 3 4", 5, -1)]
 		[InlineData("0 1 2 3 4", 6, -1)]
-		public void FindIndex(string s, int t, int expectedResult)
+		public void FindIndex(
+            string s, 
+            int t, 
+            int expectedResult)
 		{
 			// Arrange
 			var sut = s.Split(' ')

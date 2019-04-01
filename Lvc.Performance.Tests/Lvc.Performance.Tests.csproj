@@ -12,7 +12,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Lvc.Performance.Tests</RootNamespace>
     <AssemblyName>Lvc.Performance.Tests</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
@@ -87,15 +87,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Lvc.Performance.Core\Lvc.Performance.Core.csproj">
-      <Project>{1c1ee283-5707-4e83-847a-93f5d3dff24f}</Project>
+      <Project>{1C1EE283-5707-4E83-847A-93F5D3DFF24F}</Project>
       <Name>Lvc.Performance.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\Lvc.Performance\Lvc.Performance.csproj">
-      <Project>{d3162315-78c4-4310-91bb-cc337889f036}</Project>
+      <Project>{D3162315-78C4-4310-91BB-CC337889F036}</Project>
       <Name>Lvc.Performance</Name>
     </ProjectReference>
     <ProjectReference Include="..\Lvc.Tests\Lvc.Tests.csproj">
-      <Project>{48ddf848-421d-4c97-8291-08a5cdadc20d}</Project>
+      <Project>{48DDF848-421D-4C97-8291-08A5CDADC20D}</Project>
       <Name>Lvc.Tests</Name>
     </ProjectReference>
     <ProjectReference Include="..\Lvc\Lvc.csproj">

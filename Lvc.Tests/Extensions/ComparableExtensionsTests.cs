@@ -35,7 +35,11 @@ namespace Lvc.Tests.Extensions
 		[InlineData(2, -3, 3, true)]
 		[InlineData(3, -3, 3, false)]
 		[InlineData(4, -3, 3, false)]
-		public void IsInRange_Int(int value, int minValue, int maxValue, bool expectedResult)
+		public void IsInRange_Int(
+            int value, 
+            int minValue, 
+            int maxValue, 
+            bool expectedResult)
 		{
 			// Arrange
 
@@ -53,7 +57,11 @@ namespace Lvc.Tests.Extensions
 		[InlineData("d", "b", "e", true)]
 		[InlineData("e", "b", "e", false)]
 		[InlineData("f", "b", "e", false)]
-		public void IsInRange_String(string value, string minValue, string maxValue, bool expectedResult)
+		public void IsInRange_String(
+            string value, 
+            string minValue, 
+            string maxValue, 
+            bool expectedResult)
 		{
 			// Act
 			var result = value.IsInRange(minValue, maxValue);

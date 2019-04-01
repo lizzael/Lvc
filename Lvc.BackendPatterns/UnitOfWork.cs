@@ -14,16 +14,6 @@ namespace Lvc.BackendPatterns
 		=>
 			DbContext = dbContext;
 
-		public DbSet<TEntity> GetDbSet<TEntity, TKey>()
-			where TEntity : Entity<TKey>
-		=>
-			DbContext.Set<TEntity>();
-
-		public DbEntityEntry<TEntity> GetEntry<TEntity, TKey>(TEntity entity)
-			where TEntity : Entity<TKey>
-		=>
-			DbContext.Entry(entity);
-
 		public void Save() =>
 			DbContext.SaveChanges();
 
@@ -31,13 +21,5 @@ namespace Lvc.BackendPatterns
 			await DbContext
 				.SaveChangesAsync()
 				.ConfigureAwait(false);
-
-		public void Dispose()
-		{
-			DbContext?.Dispose();
-			DbContext = null;
-
-			GC.SuppressFinalize(this);
-		}
 	}
 }

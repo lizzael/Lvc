@@ -70,3 +70,24 @@ D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\obj\Debug\Lvc.Tests.cspro
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\bin\Debug\xunit.runner.utility.net452.dll
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\obj\Debug\Lvc.Tests.csproj.CopyComplete
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Tests\obj\Debug\Lvc.Tests.csprojAssemblyReference.cache
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Tests\obj\Debug\Lvc.Tests.csprojAssemblyReference.cache
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Tests\obj\Debug\Lvc.Tests.csproj.CoreCompileInputs.cache
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Tests\obj\Debug\Lvc.Tests.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Tests\obj\Debug\Lvc.Tests.pdb
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Tests\bin\Debug\xunit.runner.visualstudio.testadapter.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Tests\bin\Debug\xunit.runner.reporters.net452.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Tests\bin\Debug\xunit.abstractions.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Tests\bin\Debug\xunit.runner.utility.net452.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Tests\bin\Debug\Lvc.Tests.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Tests\bin\Debug\Lvc.Tests.pdb
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Tests\bin\Debug\Lvc.Core.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Tests\bin\Debug\Lvc.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Tests\bin\Debug\xunit.assert.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Tests\bin\Debug\xunit.core.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Tests\bin\Debug\xunit.execution.desktop.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Tests\bin\Debug\Lvc.Core.pdb
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Tests\bin\Debug\Lvc.pdb
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Tests\bin\Debug\xunit.assert.xml
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Tests\bin\Debug\xunit.core.xml
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Tests\bin\Debug\xunit.execution.desktop.xml
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Tests\obj\Debug\Lvc.Tests.csproj.CopyComplete

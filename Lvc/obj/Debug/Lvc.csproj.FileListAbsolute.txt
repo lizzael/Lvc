@@ -29,3 +29,20 @@ D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc\bin\Debug\xunit.assert.xml
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc\bin\Debug\xunit.core.xml
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc\bin\Debug\xunit.execution.desktop.xml
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc\obj\Debug\Lvc.csprojAssemblyReference.cache
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc\obj\Debug\Lvc.csprojAssemblyReference.cache
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc\obj\Debug\Lvc.csproj.CoreCompileInputs.cache
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc\obj\Debug\Lvc.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc\obj\Debug\Lvc.pdb
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc\bin\Debug\Lvc.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc\bin\Debug\Lvc.pdb
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc\bin\Debug\Lvc.Core.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc\bin\Debug\xunit.abstractions.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc\bin\Debug\xunit.assert.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc\bin\Debug\xunit.core.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc\bin\Debug\xunit.execution.desktop.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc\bin\Debug\Lvc.Core.pdb
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc\bin\Debug\xunit.abstractions.xml
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc\bin\Debug\xunit.assert.xml
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc\bin\Debug\xunit.core.xml
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc\bin\Debug\xunit.execution.desktop.xml
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc\obj\Debug\Lvc.csproj.CopyComplete

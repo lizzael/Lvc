@@ -19,3 +19,24 @@ D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance\bin\Debug\xunit.ass
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance\bin\Debug\xunit.core.xml
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance\bin\Debug\xunit.execution.desktop.xml
 D:\Users\LVillarCruz\Desktop\My Projects\Lvc\Lvc.Performance\obj\Debug\Lvc.Performance.csprojAssemblyReference.cache
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Performance\obj\Debug\Lvc.Performance.csprojAssemblyReference.cache
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Performance\obj\Debug\Lvc.Performance.csproj.CoreCompileInputs.cache
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Performance\obj\Debug\Lvc.Performance.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Performance\obj\Debug\Lvc.Performance.pdb
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Performance\bin\Debug\Lvc.Performance.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Performance\bin\Debug\Lvc.Performance.pdb
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Performance\bin\Debug\Lvc.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Performance\bin\Debug\Lvc.Performance.Core.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Performance\bin\Debug\xunit.abstractions.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Performance\bin\Debug\xunit.assert.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Performance\bin\Debug\xunit.core.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Performance\bin\Debug\xunit.execution.desktop.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Performance\bin\Debug\Lvc.Core.dll
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Performance\bin\Debug\Lvc.Performance.Core.pdb
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Performance\bin\Debug\Lvc.pdb
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Performance\bin\Debug\xunit.abstractions.xml
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Performance\bin\Debug\xunit.assert.xml
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Performance\bin\Debug\xunit.core.xml
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Performance\bin\Debug\xunit.execution.desktop.xml
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Performance\bin\Debug\Lvc.Core.pdb
+C:\Users\lvillar\source\Workspaces\GitHub\Lvc\Lvc.Performance\obj\Debug\Lvc.Performance.csproj.CopyComplete

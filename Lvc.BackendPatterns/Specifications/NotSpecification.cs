@@ -6,10 +6,10 @@ using Lvc.BackendPatterns.Core;
 
 namespace Lvc.BackendPatterns.Specifications
 {
-    public class NotSpecification<TEntity, TKey> : UnarySpecification<TEntity, TKey>
-		where TEntity : AggregateRoot<TKey>
+    public class NotSpecification<TEntity> : UnarySpecification<TEntity>
+		where TEntity : class
 	{
-        protected internal NotSpecification(ISpecification<TEntity, TKey> specification)
+        protected internal NotSpecification(ISpecification<TEntity> specification)
             : base(specification) { }
 
         public override Expression<Func<TEntity, bool>> Expression =>
